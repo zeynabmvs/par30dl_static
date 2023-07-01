@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: Noto;
+    src: url(../assets/fonts/NotoSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Noto;
+    src: url(../assets/fonts/NotoSans-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Noto;
+    src: url(../assets/fonts/NotoSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+ /* Custom contaier  */
+.co-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1441px) {
+    .co-container {
+        max-width: 1420px;
+    }
+}
+
+@keyframes shake-out {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-25deg); }
+
+    35% { transform: rotate(25deg); }
+
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes shake-in {
+    0% { transform: rotate(90deg); }
+
+    30% { transform: rotate(125deg); }
+    40% { transform: rotate(55deg); }
+
+    55% { transform: rotate(105deg); }
+    65% { transform: rotate(75deg); }
+
+    100% { transform: rotate(90deg); }
+}
+
+@layer components {
+    .btn {
+        @apply flex flex-row justify-between items-center rounded-full w-full max-w-[350px] h-60p lg:h-78p lg:w-350p text-co-button-mo lg:text-co-button px-38p pt-17p pb-18p lg:px-50p lg:pt-22p lg:pb-6;
+    }
+
+    .btn:hover {
+        @apply border-2  border-solid shadow-[9px_9px_0px];
+    }
+
+    .btn-animation {
+        transition: all .15s ease-in-out;
+    }
+
+    .btn-animation svg {
+        animation: shake-out 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .btn-animation:hover svg {
+        animation: shake-in 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .box {
+        @apply bg-co-white rounded-box w-full pt-46p pb-52p lg:p-9 hover:drop-shadow-[0_0px_172px_rgba(8,8,9,0.32)] hover:text-co-white transition-all delay-75;
+        position: relative;
+        transform: perspective(1px) translateZ(0);
+        transition: color .3s;
+        overflow: hidden;
+    }
+
+    .box::before {
+        @apply bg-co-dark-12;
+
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: scaleY(0);
+        transform-origin: 50% 100%;
+        transition: transform 0.5s ease-out;
+    }
+
+    .box:hover::before {
+        @apply bg-co-dark;
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+
+    .testimonial {
+        position: relative;
+        transition: color .3s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .testimonial:hover {
+        @apply text-co-white;
+    }
+
+    .testimonial:hover .card-name {
+        @apply text-co-yellow;
+    }
+
+    .testimonial:hover .card-arrow-l path {
+        @apply fill-co-white;
+    }
+
+    .testimonial::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: 50% 100%;
+        transition: transform 0.3s ease-out;
+        background-image: var(--before-background-image, url(''));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(35%)
+    }
+
+    .testimonial:hover::before {
+        opacity: 1;
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+
+        .faq-arrow {
+            @apply bg-co-white hover:bg-co-yellow w-12 h-12 flex shrink-0 justify-center items-center rounded-full transition-all duration-200 ease-in; 
+        }
+        .faq-arrow:hover svg path {
+            @apply stroke-co-white
+        }
+
+
+    .faq input[type="checkbox"]:checked ~  div {
+        transform: scaleY(1);
+        max-height: 350px;
+        transition: all .3s ease-in-out;
+    }
+
+    .faq input[type='checkbox']:not(:checked) ~  div {
+        transform: scaleY(0);
+        transform-origin: top;
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+ 
+    .rotate-me {
+        transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .faq input[type="checkbox"]:checked + label .rotate-me {
+        transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform: rotate(90deg);
+    }
+}
+
+
+/* Swiper customization */
+
+.swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-prev:after, 
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+}

@@ -584,12 +584,32 @@ video {
   width: 100%;
 }
 
+.max-w-\[60\%\] {
+  max-width: 60%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
 .grow {
   flex-grow: 1;
 }
 
 .grow-0 {
   flex-grow: 0;
+}
+
+.basis-auto {
+  flex-basis: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -602,6 +622,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-11 {
@@ -618,6 +642,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .bg-slate-50 {

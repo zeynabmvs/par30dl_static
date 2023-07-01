@@ -12,6 +12,39 @@ module.exports = {
             'ultra': '2560px'
         },
         fontSize: {
+            'xs': '12px',
+            'sm': '14px',
+            'base': '16px',
+            'lg': '20px',
+            'xl': '22px',
+            'btn-desktop': ['12px', {
+                lineHeight: 'normal',
+                fontWeight: '500',
+            }],
+            'card-desktop': ['13px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'post-desktop': ['14px', {
+                lineHeight: 'normal',
+                fontWeight: '900',
+            }],
+            'widget-desktop': ['14px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'p-desktop': ['12px', {
+                lineHeight: 'normal',
+                fontWeight: '400',
+            }],
+            'tile-desktop': ['18px', {
+                lineHeight: 'normal',
+                fontWeight: '900',
+            }],
+            'section-desktop': ['16px', {
+                lineHeight: 'normal',
+                fontWeight: '900',
+            }],
         },
         extend: {
             boxShadow: {

@@ -124,7 +124,7 @@
     }
 
     .btn {
-        @apply inline-flex flex-row gap-2 justify-between items-center rounded-btn bg-slate-100 pr-[.9166rem] pl-3 h-[2.125rem];
+        @apply inline-flex flex-row gap-2 justify-between items-center rounded-btn bg-slate-100 pr-[.9166rem] pl-3 h-[2.125rem] text-btn-desktop text-slate-700;
     }
 
 }

@@ -15,7 +15,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                // 'primary': "Noto, Sans-serif"
+                'primary': "IRANYekanX, serif"
             },
             colors: {
                 'primary': {

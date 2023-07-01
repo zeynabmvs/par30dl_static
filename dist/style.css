@@ -522,129 +522,166 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-primary-700 {
-  --tw-text-opacity: 1;
-  color: rgb(26 86 219 / var(--tw-text-opacity));
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 249 251 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-primary {
+  font-family: IRANYekanX, serif;
 }
 
 @font-face {
-  font-family: Noto;
-
-  src: url(../assets/fonts/NotoSans-Regular.ttf) format('truetype');
-
-  font-weight: 400;
+  font-family: IRANYekanX;
 
   font-style: normal;
 
+  font-weight: 100;
+
   font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-Thin.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Thin.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: Noto;
+  font-family: IRANYekanX;
 
-  src: url(../assets/fonts/NotoSans-SemiBold.ttf) format('truetype');
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-UltraLight.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANYekanX;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-Light.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANYekanX;
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-Medium.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANYekanX;
+
+  font-style: normal;
 
   font-weight: 600;
 
-  font-style: normal;
-
   font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-DemiBold.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-DemiBold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: Noto;
-
-  src: url(../assets/fonts/NotoSans-Bold.ttf) format('truetype');
-
-  font-weight: 700;
+  font-family: IRANYekanX;
 
   font-style: normal;
 
+  font-weight: 800;
+
   font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-ExtraBold.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-ExtraBold.woff2') format('woff2');
 }
 
-/* Custom contaier  */
+@font-face {
+  font-family: IRANYekanX;
 
-.co-container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-Black.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Black.woff2') format('woff2');
 }
 
-@media (min-width: 1441px) {
-  .co-container {
-    max-width: 1420px;
-  }
+@font-face {
+  font-family: IRANYekanX;
+
+  font-style: normal;
+
+  font-weight: 950;
+
+  font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-ExtraBlack.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2');
 }
 
-@keyframes shake-out {
-  0% {
-    transform: rotate(0deg);
-  }
+@font-face {
+  font-family: IRANYekanX;
 
-  10% {
-    transform: rotate(-25deg);
-  }
+  font-style: normal;
 
-  35% {
-    transform: rotate(25deg);
-  }
+  font-weight: 1000;
 
-  40% {
-    transform: rotate(-10deg);
-  }
+  font-display: swap;
 
-  60% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+  src: url('../assets/fonts/woff/IRANYekanX-Heavy.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Heavy.woff2') format('woff2');
 }
 
-@keyframes shake-in {
-  0% {
-    transform: rotate(90deg);
-  }
+@font-face {
+  font-family: IRANYekanX;
 
-  30% {
-    transform: rotate(125deg);
-  }
+  font-style: normal;
 
-  40% {
-    transform: rotate(55deg);
-  }
+  font-weight: bold;
 
-  55% {
-    transform: rotate(105deg);
-  }
+  font-display: swap;
 
-  65% {
-    transform: rotate(75deg);
-  }
-
-  100% {
-    transform: rotate(90deg);
-  }
+  src: url('../assets/fonts/woff/IRANYekanX-Bold.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Bold.woff2') format('woff2');
 }
 
-/* Swiper customization */
+@font-face {
+  font-family: IRANYekanX;
 
-.swiper-button-next:after, 
-.swiper-rtl .swiper-button-prev:after {
-  content: '';
-}
+  font-style: normal;
 
-.swiper-button-prev:after, 
-.swiper-rtl .swiper-button-next:after {
-  content: '';
-}
+  font-weight: normal;
 
-.swiper-button-next, 
-.swiper-button-prev {
-  position: relative;
-  width: auto;
-  height: auto;
-  margin: 0;
+  font-display: swap;
+
+  src: url('../assets/fonts/woff/IRANYekanX-Regular.woff') format('woff'),
+        url('../assets/fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');
 }

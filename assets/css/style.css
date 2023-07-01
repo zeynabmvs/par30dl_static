@@ -114,3 +114,17 @@
 }
 
 
+@layer components {
+    .icon-shape {
+        @apply flex items-center rounded-btn bg-slate-100 pr-1.5 pl-[.4375rem] h-[2.125rem];
+    }
+
+    .icon-shape svg {
+        flex-shrink: 0;
+    }
+
+    .btn {
+        @apply inline-flex flex-row gap-2 justify-between items-center rounded-btn bg-slate-100 pr-[.9166rem] pl-3 h-[2.125rem];
+    }
+
+}

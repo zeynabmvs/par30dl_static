@@ -100,3 +100,17 @@
     src: url('../assets/fonts/woff/IRANYekanX-Regular.woff') format('woff'),
         url('../assets/fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');
 }
+
+.ze-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1728px) {
+    .ze-container {
+        max-width: 1330px;
+    }
+}
+
+

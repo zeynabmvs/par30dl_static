@@ -8,12 +8,15 @@ module.exports = {
     theme: {
         screens: {
             'tablet': '768px',
-            'desktop': '1330px',
+            'desktop': '1728px',
             'ultra': '2560px'
         },
         fontSize: {
         },
         extend: {
+            boxShadow: {
+                'base': '0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10)'
+            },
             fontFamily: {
                 'primary': "IRANYekanX, serif"
             },
@@ -50,7 +53,7 @@ module.exports = {
                     600: '#475569',
                     700: '#334155',
                 },
-                'white': 'FFFFFF',                
+                'white': '#FFFFFF',                
             },
             spacing: {
 
@@ -61,6 +64,7 @@ module.exports = {
             backgroundImage: {
             },
             borderRadius: {
+                'btn': '0.5rem'
             }
         },
     },

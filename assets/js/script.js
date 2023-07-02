@@ -28,7 +28,7 @@ tabPanels.forEach((panel) => {
 });
 
 tabsContainer.addEventListener("click", (e) => {
-  const clickedTab = e.target.closest("a");
+  const clickedTab = e.target.closest("a.tab-item");
   if (!clickedTab) return;
   e.preventDefault();
 
@@ -54,7 +54,7 @@ tabsContainer.addEventListener("keydown", (e) => {
   }
 });
 
-function moveLeft() {
+function moveRight() {
   const currentTab = document.activeElement;
   if (!currentTab.parentElement.previousElementSibling) {
     switchTab(tabButtons[tabButtons.length - 1]);
@@ -65,7 +65,7 @@ function moveLeft() {
   }
 }
 
-function moveRight() {
+function moveLeft() {
   const currentTab = document.activeElement;
   if (!currentTab.parentElement.nextElementSibling) {
     switchTab(tabButtons[0]);

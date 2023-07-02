@@ -38,7 +38,7 @@ module.exports = {
                 fontWeight: '400',
             }],
             'tile-desktop': ['18px', {
-                lineHeight: 'normal',
+                lineHeight: '150%',
                 fontWeight: '900',
             }],
             'section-desktop': ['16px', {
@@ -97,7 +97,7 @@ module.exports = {
             backgroundImage: {
             },
             borderRadius: {
-                'btn': '0.5rem'
+                'base': '0.5rem'
             }
         },
     },

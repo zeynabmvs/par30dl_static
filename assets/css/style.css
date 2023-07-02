@@ -107,7 +107,7 @@
     margin-right: auto;
 }
 
-@media (min-width: 1728px) {
+@media (min-width: 1440px) {
     .ze-container {
         max-width: 1330px;
     }
@@ -116,7 +116,7 @@
 
 @layer components {
     .icon-shape {
-        @apply flex items-center rounded-btn bg-slate-100 pr-1.5 pl-[.4375rem] h-[2.125rem];
+        @apply flex items-center rounded-base bg-slate-100 pr-1.5 pl-[.4375rem] h-[2.125rem];
     }
 
     .icon-shape svg {
@@ -124,7 +124,28 @@
     }
 
     .btn {
-        @apply inline-flex flex-row gap-2 justify-between items-center rounded-btn bg-slate-100 pr-[.9166rem] pl-3 h-[2.125rem] text-btn-desktop text-slate-700;
+        @apply inline-flex flex-row gap-2 justify-between items-center rounded-base bg-slate-100 pr-[.9166rem] pl-3 h-[2.125rem] text-btn-desktop text-slate-700;
+    }
+
+    .tile {
+        @apply relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden;
+    }
+
+    .tile::before {
+        content: "";
+        @apply absolute inset-0;
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
+    }
+
+    .tile_content {
+        @apply flex flex-col gap-4 text-right px-6 z-10;
+    }
+
+    .tile_title {
+        @apply text-tile-desktop text-white;
+    }
+    .chip {
+        @apply text-xs font-medium text-white bg-primary-500 h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start;
     }
 
 }

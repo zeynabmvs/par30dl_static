@@ -41,7 +41,7 @@ module.exports = {
                 lineHeight: '150%',
                 fontWeight: '900',
             }],
-            'section-desktop': ['16px', {
+            'section-title': ['16px', {
                 lineHeight: 'normal',
                 fontWeight: '900',
             }],

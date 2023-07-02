@@ -612,6 +612,46 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.card {
+  display: flex;
+  height: 14rem;
+  flex-shrink: 0;
+  flex-basis: 13rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+.card .card_thumbnail {
+  height: 125px;
+  width: auto;
+}
+
+.card .card_title {
+  font-size: 13px;
+  line-height: normal;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.card .card_date {
+  font-size: 12px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(147 162 183 / var(--tw-text-opacity));
+}
+
+.card .card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -692,6 +732,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -718,6 +762,15 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 231 239 / var(--tw-bg-opacity));
 }
 
 .bg-slate-50 {
@@ -752,12 +805,22 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .font-primary {
   font-family: IRANYekanX, serif;
 }
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-section-title {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 900;
 }
 
 .text-sm {

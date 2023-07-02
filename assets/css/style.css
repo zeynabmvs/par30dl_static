@@ -148,4 +148,25 @@
         @apply text-xs font-medium text-white bg-primary-500 h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start;
     }
 
+    .card {
+        @apply flex flex-col gap-2 basis-52 rounded-base h-56 bg-white shrink-0;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);
+
+    }
+    .card .card_thumbnail {
+        height: 125px;
+        width: auto;
+
+    }
+    .card .card_title {
+        @apply text-card-desktop text-slate-700;
+    }
+
+    .card .card_date {
+        @apply text-slate-400 font-medium text-xs;
+    }
+
+    .card .card_content {
+        @apply flex flex-col gap-2 p-2;
+    }
 }

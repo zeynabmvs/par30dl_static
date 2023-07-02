@@ -144,7 +144,7 @@
     .tile .tile_title {
         @apply text-tile-desktop text-white;
     }
-    
+
     .chip {
         @apply text-xs font-medium text-white bg-primary-500 h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start;
     }
@@ -154,11 +154,13 @@
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);
 
     }
+
     .card .card_thumbnail {
         height: 125px;
         width: auto;
 
     }
+
     .card .card_title {
         @apply text-card-desktop text-slate-700;
     }
@@ -174,4 +176,28 @@
     .tab-item {
         @apply text-slate-500 bg-white text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full;
     }
+
+    .tabs-container [role=tablist] {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .tabs-container [aria-selected=true] {
+        @apply bg-slate-700 text-slate-50
+    }
+
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
 }

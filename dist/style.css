@@ -668,6 +668,21 @@ video {
   color: rgb(100 116 138 / var(--tw-text-opacity));
 }
 
+.tabs-container [role=tablist] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.tabs-container [aria-selected=true] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(247 249 251 / var(--tw-text-opacity));
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }

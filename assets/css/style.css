@@ -169,4 +169,8 @@
     .card .card_content {
         @apply flex flex-col gap-2 p-2;
     }
+
+    .tab-item {
+        @apply text-slate-500 bg-white text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full;
+    }
 }

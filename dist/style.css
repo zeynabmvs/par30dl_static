@@ -615,8 +615,6 @@ video {
 .card {
   display: flex;
   height: 14rem;
-  width: 16.666667%;
-  flex-shrink: 0;
   flex-direction: column;
   gap: 0.5rem;
   border-radius: 0.5rem;
@@ -770,6 +768,14 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-2 {

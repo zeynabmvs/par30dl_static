@@ -137,13 +137,14 @@
         background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
     }
 
-    .tile_content {
+    .tile .tile_content {
         @apply flex flex-col gap-4 text-right px-6 z-10;
     }
 
-    .tile_title {
+    .tile .tile_title {
         @apply text-tile-desktop text-white;
     }
+    
     .chip {
         @apply text-xs font-medium text-white bg-primary-500 h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start;
     }

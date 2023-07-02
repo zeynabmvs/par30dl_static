@@ -577,7 +577,7 @@ video {
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
 }
 
-.tile_content {
+.tile .tile_content {
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -587,7 +587,7 @@ video {
   text-align: right;
 }
 
-.tile_title {
+.tile .tile_title {
   font-size: 18px;
   line-height: 150%;
   font-weight: 900;

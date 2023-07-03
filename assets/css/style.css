@@ -358,7 +358,11 @@
     }
 
     .post-chips {
-        @apply flex justify-center gap-2 pt-1;
+        @apply flex justify-center gap-2;
+    }
+
+    .post-type-1 .post-chips {
+        padding-top: 4px
     }
 
     .post-type-2 .post-thumbnail{
@@ -369,8 +373,11 @@
     .post-type-2 .img-wrapper {
         position: relative;
     }
-    
+
     .post-type-2 .post-chips {
         @apply  absolute bottom-4 right-4;
+    }
+    .post-metas {
+        @apply flex items-center justify-start
     }
 }

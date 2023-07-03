@@ -959,7 +959,10 @@ video {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  padding-top: 0.25rem;
+}
+
+.post-type-1 .post-chips {
+  padding-top: 4px
 }
 
 .post-type-2 .post-thumbnail {
@@ -977,8 +980,10 @@ video {
   right: 1rem;
 }
 
-.relative {
-  position: relative;
+.post-metas {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .col-span-2 {

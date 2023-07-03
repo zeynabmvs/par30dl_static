@@ -955,6 +955,32 @@ video {
   gap: 1rem;
 }
 
+.post-chips {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.post-type-2 .post-thumbnail {
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, rgba(17, 25, 40, 0.00) 0%, #111928 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.post-type-2 .img-wrapper {
+  position: relative;
+}
+
+.post-type-2 .post-chips {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1131,10 +1157,6 @@ video {
 
 .pb-32 {
   padding-bottom: 8rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .pt-8 {

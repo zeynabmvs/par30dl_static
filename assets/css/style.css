@@ -337,7 +337,7 @@
     .post-meta-cells {
         @apply flex gap-[5px] items-center flex-wrap;
     }
-    
+
     .post-meta {
         @apply text-[10px] text-slate-400 font-bold;
     }
@@ -357,5 +357,20 @@
         @apply  flex justify-end items-center gap-4;
     }
 
+    .post-chips {
+        @apply flex justify-center gap-2 pt-1;
+    }
 
+    .post-type-2 .post-thumbnail{
+        @apply rounded-base;
+        background: linear-gradient(180deg, rgba(17, 25, 40, 0.00) 0%, #111928 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+
+    .post-type-2 .img-wrapper {
+        position: relative;
+    }
+    
+    .post-type-2 .post-chips {
+        @apply  absolute bottom-4 right-4;
+    }
 }

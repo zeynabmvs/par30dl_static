@@ -227,7 +227,7 @@
         height: 64px;
         width: 64px;
     }
-    .widget-type1 .text-box {
+    .widget-text-box {
         @apply flex flex-col items-start justify-center gap-1.5;
     }
     .widget-item-title {

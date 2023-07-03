@@ -237,4 +237,15 @@
     .widget-item-meta {
         @apply text-slate-400 font-medium text-xs text-right;
     }
+
+    .widget-type4 > a {
+        @apply flex flex-col gap-2 items-center;
+    }
+    .widget-type4 img {
+        @apply w-full h-full
+    }
+    .widget-meta-box {
+        display: flex;
+        @apply gap-1.5 justify-start items-center;
+    }
 }

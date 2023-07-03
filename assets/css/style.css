@@ -310,6 +310,34 @@
         background: linear-gradient(270deg, #F0F4F8 0%, rgba(240, 244, 248, 0.51) 48.81%, rgba(240, 244, 248, 0.00) 100%);
     }
 
+    .post {
+        @apply flex flex-col gap-6 pb-6 border-b border-slate-200
+    }
+    
+    .post-content-wrapper {
+        @apply flex gap-6;
+    }
+
+    .post-content {
+        @apply  flex flex-col items-start gap-1.5;
+    }
+
+    .post-title {
+        @apply text-post-desktop;
+    }
+
+    .post-text {
+        @apply text-p-desktop py-2 text-slate-600;
+    }
+    
+    .post-more-info {
+        @apply pt-4;
+    }
+
+    .post-meta-cells {
+        @apply flex gap-[5px] items-center flex-wrap;
+    }
+    
     .post-meta {
         @apply text-[10px] text-slate-400 font-bold;
     }
@@ -320,4 +348,14 @@
         content: "|";
         padding-right: .5rem;
     }
+
+    .post-footer {
+        @apply flex items-center justify-between;
+    }
+
+    .post-footer-btns {
+        @apply  flex justify-end items-center gap-4;
+    }
+
+
 }

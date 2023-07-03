@@ -200,4 +200,41 @@
         width: 1px;
     }
 
+    .side-widget {
+        @apply bg-white rounded-base py-[23px] px-6 flex gap-2 flex-col;
+    }
+
+    .widget-header {
+        @apply inline-flex justify-between items-center gap-2 self-start;
+    }
+
+    .widget-header-text {
+        @apply text-base font-black text-slate-700;
+    }
+
+    .widget-header-text-sm {
+        @apply text-xs;
+    }
+
+    .widget-content {
+        @apply flex flex-col gap-8;
+    }
+
+    .widget-type1 > a {
+        @apply flex gap-2 items-center;
+    }
+    .widget-type1 img {
+        height: 64px;
+        width: 64px;
+    }
+    .widget-type1 .text-box {
+        @apply flex flex-col items-start justify-center gap-1.5;
+    }
+    .widget-item-title {
+        @apply text-slate-700 font-bold text-sm text-right;
+    }
+    
+    .widget-item-meta {
+        @apply text-slate-400 font-medium text-xs text-right;
+    }
 }

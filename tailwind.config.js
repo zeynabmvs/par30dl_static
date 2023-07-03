@@ -41,10 +41,6 @@ module.exports = {
                 lineHeight: '150%',
                 fontWeight: '900',
             }],
-            'section-title': ['16px', {
-                lineHeight: 'normal',
-                fontWeight: '900',
-            }],
         },
         extend: {
             boxShadow: {

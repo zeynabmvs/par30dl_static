@@ -270,7 +270,7 @@
     }
 
     .side-widget {
-        @apply bg-white rounded-base py-[23px] px-6 flex gap-6 flex-col;
+        @apply bg-white rounded-base py-[23px] px-6 flex gap-2 flex-col;
     }
 
     .widget-header {

@@ -430,4 +430,15 @@
         @apply text-slate-500 bg-slate-200 pt-px px-0.5 rounded-full text-[8px] font-normal text-center;
     }
 
+    .footer-widget-list {
+        
+    }
+
+    .footer-widget-title {
+        @apply pr-1.5 pb-1.5 font-black text-sm text-slate-700;
+    }
+
+    .footer-widget-list ul{
+        @apply text-slate-500 font-bold text-sm list-disc list-inside;
+    }
 }

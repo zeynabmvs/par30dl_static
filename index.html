@@ -246,7 +246,7 @@
 
 
             <div class="tabs-js">
-                <div class="tabs-container flex flex-col justify-start gap-6 my-8">
+                <div class="tabs-container tabs-type-1 flex flex-col justify-start gap-6 my-8">
 
 
                     <div class="widget-header">
@@ -572,27 +572,6 @@
 
                 <aside class="basis-1/4 flex flex-col gap-6">
 
-                    <!-- Sidebar widget tab -->
-                    <div class="side-widget widget-tabs">
-                        <div class="tabs-js">
-                            <div class="tabs-container">
-                                <div>
-                                    <ul>
-                                        <li><a href="#categories_tab1_content" id="categories-tab-1"
-                                                class="tab-item">بازی</a></li>
-                                        <li><a href="#categories_tab2_content" id="categories-tab-2"
-                                                class="tab-item">انیمیشن</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="tabs-panels flow">
-                                    <div id="categories_tab1_content" aria-labelledby="categories-tab-1">hi</div>
-                                    <div id="categories_tab2_content" aria-labelledby="categories-tab-1">hi2</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Sidebar Widget, type1: image+title -->
                     <div class="side-widget">
                         <div class="widget-header">
@@ -610,31 +589,7 @@
                             <div class="widget-item widget-type1">
                                 <a href="#">
                                     <img src="assets/img/app-icon1.png"
-                                        alt="SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ">
-                                    <div class="widget-text-box">
-                                        <h5 class="widget-item-title">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
-                                        </h5>
-                                        <span class="widget-item-meta">آپدیت ۱۲ تیر ۱۴۰۲</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="widget-item widget-type1">
-                                <a href="#">
-                                    <img src="assets/img/app-icon1.png"
-                                        alt="SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ">
-                                    <div class="widget-text-box">
-                                        <h5 class="widget-item-title">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
-                                        </h5>
-                                        <span class="widget-item-meta">آپدیت ۱۲ تیر ۱۴۰۲</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="widget-item widget-type1">
-                                <a href="#">
-                                    <img src="assets/img/app-icon1.png"
-                                        alt="SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ">
+                                        alt="">
                                     <div class="widget-text-box">
                                         <h5 class="widget-item-title">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
@@ -735,7 +690,7 @@
                 <div class="basis-2/4 flex flex-col gap-6">
 
                     <!-- Posts -->
-                    <div class="posts flex flex-col gap-6 p-6 bg-white">
+                    <div class="posts flex flex-col gap-6 p-6 bg-white rounded-base">
 
                         <div class="post post-type-1">
                             <div class="post-content-wrapper">
@@ -894,6 +849,54 @@
                 </div>
 
                 <aside class="basis-1/4 flex flex-col gap-6">
+
+                    <!-- Sidebar widget: tab -->
+                    <div class="side-widget widget-tabs">
+                        <div class="tabs-js">
+                            <div class="tabs-container tabs-type-2">
+                                <div>
+                                    <ul class="full-width-ul">
+                                        <li class="tab-item-wrapper"><a href="#categories_tab1_content" id="categories-tab-1"
+                                                class="tab-item right">بازی</a></li>
+                                        <li class="tab-item-wrapper"><a href="#categories_tab2_content" id="categories-tab-2"
+                                                class="tab-item left">انیمیشن</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-panels flow">
+                                    <div id="categories_tab1_content" aria-labelledby="categories-tab-1">
+
+                                        <div class="grid grid-cols-2 grid-rows-5 gap-1 py-4">
+                                            <div class="widget-cat-item">استراتژیک<span class="cat-item-count">205</span></div>
+                                            <div class="widget-cat-item">انیمیشن<span class="cat-item-count">25</span></div>
+                                            <div class="widget-cat-item">اکشن<span class="cat-item-count">12</span></div>
+                                            <div class="widget-cat-item">ترس و بقا<span class="cat-item-count">4</span></div>
+                                            <div class="widget-cat-item">پازلی<span class="cat-item-count">125</span></div>
+                                            <div class="widget-cat-item">چند نفره آنلاین<span class="cat-item-count">5</span></div>
+                                            <div class="widget-cat-item">شبیه ساز<span class="cat-item-count">86</span></div>
+                                            <div class="widget-cat-item">جهان باز<span class="cat-item-count">12</span></div>
+                                            <div class="widget-cat-item">فانتزی<span class="cat-item-count">10</span></div>
+                                            <div class="widget-cat-item">علمی تخیلی<span class="cat-item-count">25</span></div>
+                                        </div>
+
+                                    </div>
+                                    <div id="categories_tab2_content" aria-labelledby="categories-tab-1">
+
+                                        <div class="grid grid-cols-2 grid-rows-5 gap-1 py-4">
+                                            <div class="widget-cat-item">ترس و بقا<span class="cat-item-count">4</span></div>
+                                            <div class="widget-cat-item">پازلی<span class="cat-item-count">125</span></div>
+                                            <div class="widget-cat-item">کمدی<span class="cat-item-count">5</span></div>
+                                            <div class="widget-cat-item">دیزنی<span class="cat-item-count">86</span></div>
+                                            <div class="widget-cat-item">جهان باز<span class="cat-item-count">12</span></div>
+                                            <div class="widget-cat-item">فانتزی<span class="cat-item-count">10</span></div>
+                                            <div class="widget-cat-item">علمی تخیلی<span class="cat-item-count">25</span></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Sidebar Widget, type2: title -->
                     <div class="side-widget">

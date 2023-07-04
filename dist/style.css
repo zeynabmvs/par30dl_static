@@ -862,6 +862,10 @@ video {
   fill: #1D4ED7;
 }
 
+.post:last-child {
+  border-style: none;
+}
+
 .post-meta-cell {
   display: inline;
   width: 12rem;

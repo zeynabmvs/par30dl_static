@@ -19,7 +19,7 @@
     <!-- header-desktop  -->
     <header class="bg-white shadow-base flex justify-center items-center mb-8">
         <div class="flex items-center gap-11 w-full h-32 px-14">
-            <a href="#" class="grow-0"><img src="assets/img/logo.png" alt="Par30dl"></a>
+            <a href="#" class="grow-0"><img src="assets/img/logo.svg" alt="Par30dl"></a>
 
             <div class="grow flex flex-col gap-4 py-4">
                 <div class="flex justify-between gap-8">
@@ -113,6 +113,13 @@
 
     <main class="ze-container">
         <div class="flex flex-col gap-8">
+
+            <div class="grid grid-cols-4 grid-rows-2">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
 
             <!-- Tiles, Features Section -->
             <section class="grid gap-6 grid-rows-2 grid-cols-4 ">
@@ -238,315 +245,353 @@
             </div>
 
 
-            <div class="tabs-container flex flex-col justify-start gap-6 my-8">
+            <div class="tabs-js">
+                <div class="tabs-container flex flex-col justify-start gap-6 my-8">
 
 
-                <div class="widget-header">
-                    <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="bulet"
-                            d="M0.683754 2.99817C0.741577 1.34233 2.13078 0.0468751 3.78662 0.104698L5.00183 0.147134C6.65767 0.204958 7.95313 1.59416 7.8953 3.25001L7.53949 13.4393C7.48166 15.0951 6.09246 16.3906 4.43661 16.3328L1.22263 16.2205C0.670681 16.2012 0.238863 15.7382 0.258137 15.1862L0.683754 2.99817Z"
-                            fill="#F63326" />
-                    </svg>
-                    <h4 class="widget-header-text">برگزیده مطالب</h4>
+                    <div class="widget-header">
+                        <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="bulet"
+                                d="M0.683754 2.99817C0.741577 1.34233 2.13078 0.0468751 3.78662 0.104698L5.00183 0.147134C6.65767 0.204958 7.95313 1.59416 7.8953 3.25001L7.53949 13.4393C7.48166 15.0951 6.09246 16.3906 4.43661 16.3328L1.22263 16.2205C0.670681 16.2012 0.238863 15.7382 0.258137 15.1862L0.683754 2.99817Z"
+                                fill="#F63326" />
+                        </svg>
+                        <h4 class="widget-header-text">برگزیده مطالب</h4>
+                    </div>
+
+                    <!-- tab items -->
+                    <div>
+                        <ul>
+                            <li><a href="#tab1_content" id="tab-1" class="tab-item">فیلمهای محبوب</a></li>
+                            <li><a href="#tab2_content" id="tab-2" class="tab-item">بیشترین دیدگاه</a></li>
+                            <li><a href="#tab3_content" id="tab-3" class="tab-item">هوش مصنوعی</a></li>
+                            <li><a href="#tab4_content" id="tab-4" class="tab-item">انتخاب سردبیر</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tabs-panels flow">
+                        <div id="tab1_content" aria-labelledby="tab-1">
+
+                            <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                            مشخص
+                                            شد</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image4.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div id="tab2_content" aria-labelledby="tab-2">
+
+                            <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image2.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                            مشخص
+                                            شد</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image2.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image4.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div id="tab3_content" aria-labelledby="tab-3">
+
+                            <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                            مشخص
+                                            شد</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image2.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div id="tab4_content" aria-labelledby="tab-4">
+
+                            <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image2.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image2.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                            مشخص
+                                            شد</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image4.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image3.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                            کنسول‌های
+                                            نسل ۹
+                                            عرضه می‌شود</h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="card">
+                                    <img src="assets/img/card-image1.png" class="card_thumbnail"
+                                        alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                                    <div class="card_content">
+                                        <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        </h5>
+                                        <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- End of tabs -->
                 </div>
-
-                <!-- tab items -->
-                <div>
-                    <ul aria-labelledby="tabs-title">
-                        <li><a href="#tab1_content" id="tab-1" class="tab-item">فیلمهای محبوب</a></li>
-                        <li><a href="#tab2_content" id="tab-2" class="tab-item">بیشترین دیدگاه</a></li>
-                        <li><a href="#tab3_content" id="tab-3" class="tab-item">هوش مصنوعی</a></li>
-                        <li><a href="#tab4_content" id="tab-4" class="tab-item">انتخاب سردبیر</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-panels flow">
-                    <div id="tab1_content" aria-labelledby="tab-1">
-
-                        <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2 مشخص
-                                        شد</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image4.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div id="tab2_content" aria-labelledby="tab-2">
-
-                        <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image2.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2 مشخص
-                                        شد</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image2.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image4.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div id="tab3_content" aria-labelledby="tab-3">
-
-                        <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2 مشخص
-                                        شد</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image2.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div id="tab4_content" aria-labelledby="tab-4">
-
-                        <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image2.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image2.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2 مشخص
-                                        شد</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image4.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image3.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های
-                                        نسل ۹
-                                        عرضه می‌شود</h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <img src="assets/img/card-image1.png" class="card_thumbnail"
-                                    alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                                <div class="card_content">
-                                    <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
-                                    </h5>
-                                    <span class="card_date">۱۲ تیر ۱۴۰۲</span>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- End of tabs -->
             </div>
-
             <div class="flex gap-6 pt-8">
 
                 <aside class="basis-1/4 flex flex-col gap-6">
+
+                    <!-- Sidebar widget tab -->
+                    <div class="side-widget widget-tabs">
+                        <div class="tabs-js">
+                            <div class="tabs-container">
+                                <div>
+                                    <ul>
+                                        <li><a href="#categories_tab1_content" id="categories-tab-1"
+                                                class="tab-item">بازی</a></li>
+                                        <li><a href="#categories_tab2_content" id="categories-tab-2"
+                                                class="tab-item">انیمیشن</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-panels flow">
+                                    <div id="categories_tab1_content" aria-labelledby="categories-tab-1">hi</div>
+                                    <div id="categories_tab2_content" aria-labelledby="categories-tab-1">hi2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Sidebar Widget, type1: image+title -->
                     <div class="side-widget">
@@ -690,7 +735,7 @@
                 <div class="basis-2/4 flex flex-col gap-6">
 
                     <!-- Posts -->
-                    <div class="flex flex-col gap-6 p-6 bg-white">
+                    <div class="posts flex flex-col gap-6 p-6 bg-white">
 
                         <div class="post post-type-1">
                             <div class="post-content-wrapper">
@@ -812,10 +857,10 @@
                                 <div class="post-content">
                                     <h2 class="post-title">استفاده از هوش مصنوعی برای تولید تیتراژ آغازین سریال Secret
                                         Invasion مارول</h2>
-                                        <div class="post-metas">
-                                            <span class="post-meta">۳ خرداد ۱۴۰۲</span>
-                                            <span class="post-meta">۱۲ دیدگاه</span>
-                                        </div>
+                                    <div class="post-metas">
+                                        <span class="post-meta">۳ خرداد ۱۴۰۲</span>
+                                        <span class="post-meta">۱۲ دیدگاه</span>
+                                    </div>
                                     <p class="post-text">تیتراژ افتتاحیه Secret Invasion باعث شکل‌گیری بحث‌های زیادی در
                                         فضای مجازی شده است که احتمالا بسیاری از افراد را تشویق به تماشای این سریال کوتاه
                                         خواهد کرد. در چند سال گذشته «استفاده از هوش مصنوعی» و «تهدید مشاغل وابسته به
@@ -838,7 +883,9 @@
                                         <span class="post-meta">۳ خرداد ۱۴۰۲</span>
                                         <span class="post-meta">۱۲ دیدگاه</span>
                                     </div>
-                                    <p class="post-text">انویدیا ادعا می‌کند که کارت گرافیک RTX 4060 حتی بدون بهره‌گیری از مزایای Frame Generation و DLSS3 بیست درصد سریع‌تر از RTX 3060 از نسل قبل عمل می‌کند.</p>
+                                    <p class="post-text">انویدیا ادعا می‌کند که کارت گرافیک RTX 4060 حتی بدون بهره‌گیری
+                                        از مزایای Frame Generation و DLSS3 بیست درصد سریع‌تر از RTX 3060 از نسل قبل عمل
+                                        می‌کند.</p>
                                 </div>
                             </div>
                         </div>

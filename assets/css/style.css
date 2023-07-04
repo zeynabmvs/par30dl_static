@@ -304,7 +304,9 @@
     .alert-blue svg path {
         @apply fill-blue-700
     }
-
+    .post:last-child{
+        @apply border-none
+    }
     .post-meta-cell {
         @apply inline text-[10px] text-slate-500 text-right rounded-sm py-0.5 px-2 w-48;
         background: linear-gradient(270deg, #F0F4F8 0%, rgba(240, 244, 248, 0.51) 48.81%, rgba(240, 244, 248, 0.00) 100%);

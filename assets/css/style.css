@@ -450,4 +450,20 @@
     .footer-widget-list ul{
         @apply text-slate-500 font-bold text-sm list-disc list-inside;
     }
+    .pagination {
+        @apply border border-gray-300 rounded-s w-fit;
+        display: flex;
+    }
+
+    .pagination > li > a{
+        @apply bg-white text-slate-500 flex justify-center items-center h-8 px-3 text-sm font-medium;
+    }
+
+    .pagination > :not(:last-child) {
+        @apply border-l border-gray-300
+    }
+
+    .pagination > li > a.active{
+        @apply bg-gray-100 text-gray-900 cursor-default;
+    }
 }

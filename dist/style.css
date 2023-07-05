@@ -1017,6 +1017,11 @@ video {
   padding-top: 4px
 }
 
+.post-type-1 .post-thumbnail {
+  width: 150px;
+  height: 227px
+}
+
 .post-type-2 .post-thumbnail {
   border-radius: 0.5rem;
   background: linear-gradient(180deg, rgba(17, 25, 40, 0.00) 0%, #111928 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
@@ -1030,6 +1035,11 @@ video {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+}
+
+.post-type-3 .post-thumbnail {
+  width: 200px;
+  height: 156px
 }
 
 .post-metas {
@@ -1188,6 +1198,10 @@ video {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .grow {

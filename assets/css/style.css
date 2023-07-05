@@ -404,6 +404,10 @@
     .post-type-1 .post-chips {
         padding-top: 4px
     }
+    .post-type-1 .post-thumbnail {
+        width: 150px;
+        height: 227px
+    }
 
     .post-type-2 .post-thumbnail {
         @apply rounded-base;
@@ -416,6 +420,11 @@
 
     .post-type-2 .post-chips {
         @apply absolute bottom-4 right-4;
+    }
+    
+    .post-type-3 .post-thumbnail {
+        width: 200px;
+        height: 156px
     }
 
     .post-metas {

@@ -1186,6 +1186,10 @@ video {
   width: 100%;
 }
 
+.w-\[7px\] {
+  width: 7px;
+}
+
 .max-w-\[60\%\] {
   max-width: 60%;
 }
@@ -1234,6 +1238,22 @@ video {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[\] {
+  grid-template-columns: ;
+}
+
+.grid-cols-\[1fr_\] {
+  grid-template-columns: 1fr;
+}
+
+.grid-cols-\[1fr_5px_1fr\] {
+  grid-template-columns: 1fr 5px 1fr;
+}
+
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -1244,6 +1264,10 @@ video {
 
 .grid-rows-5 {
   grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col {

@@ -404,6 +404,7 @@
     .post-type-1 .post-chips {
         padding-top: 4px
     }
+
     .post-type-1 .post-thumbnail {
         width: 150px;
         height: 227px
@@ -421,7 +422,7 @@
     .post-type-2 .post-chips {
         @apply absolute bottom-4 right-4;
     }
-    
+
     .post-type-3 .post-thumbnail {
         width: 200px;
         height: 156px
@@ -439,31 +440,42 @@
         @apply text-slate-500 bg-slate-200 pt-px px-0.5 rounded-full text-[8px] font-normal text-center;
     }
 
-    .footer-widget-list {
-        
-    }
+    .footer-widget-list {}
 
     .footer-widget-title {
         @apply pr-1.5 pb-1.5 font-black text-sm text-slate-700;
     }
 
-    .footer-widget-list ul{
+    .footer-widget-list ul {
         @apply text-slate-500 font-bold text-sm list-disc list-inside;
     }
+
     .pagination {
         @apply border border-gray-300 rounded-s w-fit;
         display: flex;
     }
 
-    .pagination > li > a{
+    .pagination>li>a {
         @apply bg-white text-slate-500 flex justify-center items-center h-8 px-3 text-sm font-medium;
     }
 
-    .pagination > :not(:last-child) {
+    .pagination> :not(:last-child) {
         @apply border-l border-gray-300
     }
 
-    .pagination > li > a.active{
+    .pagination>li>a.active {
         @apply bg-gray-100 text-gray-900 cursor-default;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

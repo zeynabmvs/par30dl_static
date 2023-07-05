@@ -1109,7 +1109,7 @@ video {
   display: flex;
 }
 
-.pagination > li > a {
+.pagination>li>a {
   display: flex;
   height: 2rem;
   align-items: center;
@@ -1124,18 +1124,31 @@ video {
   color: rgb(100 116 138 / var(--tw-text-opacity));
 }
 
-.pagination > :not(:last-child) {
+.pagination> :not(:last-child) {
   border-left-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.pagination > li > a.active {
+.pagination>li>a.active {
   cursor: default;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(17 25 40 / var(--tw-text-opacity));
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .absolute {

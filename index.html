@@ -10,6 +10,8 @@
     <!-- displays site properly based on user's device -->
     <meta name="description" content="Static site for par30dl using tailwind">
 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <link href="dist/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -175,9 +177,10 @@
                 </div>
 
                 <!-- Carousel -->
-                <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
+                <div class="swiper" id="swiper-news">
+                <div class="swiper-wrapper">
 
-                    <a href="#" class="card">
+                    <a href="#" class="swiper-slide card">
                         <img src="assets/img/card-image1.png" class="card_thumbnail"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="card_content">
@@ -187,7 +190,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="card">
+                    <a href="#" class="swiper-slide card">
                         <img src="assets/img/card-image2.png" class="card_thumbnail"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="card_content">
@@ -196,7 +199,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="card">
+                    <a href="#" class="swiper-slide card">
                         <img src="assets/img/card-image3.png" class="card_thumbnail"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="card_content">
@@ -206,7 +209,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="card">
+                    <a href="#" class="swiper-slide card">
                         <img src="assets/img/card-image4.png" class="card_thumbnail"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="card_content">
@@ -215,7 +218,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="card">
+                    <a href="#" class="swiper-slide card">
                         <img src="assets/img/card-image1.png" class="card_thumbnail"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="card_content">
@@ -225,7 +228,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="card">
+                    <a href="#" class="swiper-slide card">
                         <img src="assets/img/card-image1.png" class="card_thumbnail"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="card_content">
@@ -233,8 +236,29 @@
                             <span class="card_date">۱۲ تیر ۱۴۰۲</span>
                         </div>
                     </a>
-                </div>
 
+
+                    <a href="#" class="swiper-slide card">
+                        <img src="assets/img/card-image3.png" class="card_thumbnail"
+                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                        <div class="card_content">
+                            <h5 class="card_title">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
+                                عرضه می‌شود</h5>
+                            <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide card">
+                        <img src="assets/img/card-image4.png" class="card_thumbnail"
+                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                        <div class="card_content">
+                            <h5 class="card_title">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon</h5>
+                            <span class="card_date">۱۲ تیر ۱۴۰۲</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
             </div>
 
 
@@ -1344,6 +1368,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

@@ -33,8 +33,6 @@ tabSets.forEach(tabSet => {
   tabsContainer.addEventListener("click", (e) => {
     const clickedTab = e.target.closest("a.tab-item");
 
-    console.log(clickedTab);
-
     if (!clickedTab) return;
     e.preventDefault();
 
@@ -104,4 +102,13 @@ tabSets.forEach(tabSet => {
 
 
 
+});
+
+const swiperNews = new Swiper('#swiper-news', {
+  slidesPerView: 6,
+  spaceBetween: 24,
+  pagination: {
+    // el: ".swiper-pagination",
+    clickable: true,
+  },
 });

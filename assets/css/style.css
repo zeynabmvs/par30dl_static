@@ -324,7 +324,7 @@
     }
 
     .alert {
-        @apply rounded-md py-1 pr-[9px] pl-4 bg-slate-50 text-gray-900 text-right inline-flex items-center gap-2.5 text-[10px] font-semibold;
+        @apply rounded-md py-1 pr-[9px] pl-4 bg-slate-50 text-gray-900 text-right inline-flex items-center gap-2.5 text-xxs font-semibold;
     }
 
     .alert svg path {
@@ -344,7 +344,7 @@
     }
 
     .post-meta-cell {
-        @apply inline text-[10px] text-slate-500 text-right rounded-sm py-0.5 px-2 w-48;
+        @apply inline text-xxs text-slate-500 text-right rounded-sm py-0.5 px-2 w-48;
         background: linear-gradient(270deg, #F0F4F8 0%, rgba(240, 244, 248, 0.51) 48.81%, rgba(240, 244, 248, 0.00) 100%);
     }
 
@@ -377,7 +377,7 @@
     }
 
     .post-meta {
-        @apply text-[10px] text-slate-400 font-bold;
+        @apply text-xxs text-slate-400 font-bold;
     }
 
     .post-meta:not(:last-child) {
@@ -423,7 +423,7 @@
     }
 
     .widget-cat-item {
-        @apply flex h-8 bg-slate-100 rounded-sm gap-2 justify-center items-center text-slate-700 text-[10px] font-bold;
+        @apply flex h-8 bg-slate-100 rounded-sm gap-2 justify-center items-center text-slate-700 text-xxs font-bold;
     }
 
     .cat-item-count {

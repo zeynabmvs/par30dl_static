@@ -12,6 +12,7 @@ module.exports = {
             'ultra': '2560px'
         },
         fontSize: {
+            'xxs': '10px',
             'xs': '12px',
             'sm': '14px',
             'base': '16px',

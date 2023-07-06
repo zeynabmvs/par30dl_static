@@ -101,6 +101,11 @@
         url('../assets/fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');
 }
 
+
+:root {
+    --sticky-header-height: 73px;
+}
+
 .ze-container {
     max-width: 90%;
     margin-left: auto;
@@ -475,30 +480,50 @@
         @apply bg-gray-100 text-gray-900 cursor-default;
     }
 
-    .swiper {
-        width: 100%;
-        height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hide-overfolw-6 .card:nth-child(n+7) {
+    display: none;
+}
+
+
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 100
+}
+
+.sticky {
+    position: fixed;
+    top: calc(var(--sticky-header-height) * -1);
+    left: 0;
+    height: var(--sticky-header-height);
+    animation: goDown 0.5s ease-in-out forwards;
+
+}
+
+.sticky .hide-sticky {
+    display: none;
+}
+
+@keyframes goDown {
+    0% {
+        top: calc(var(--sticky-header-height) * -1);
     }
 
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .hide-overfolw-6 .card:nth-child(n+7) {
-        display: none;
-    }
-
-    .sticky-header {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        z-index: 100
-    }
-
-    .sticky-header .hide-sticky {
-        display: none;
+    100% {
+        transform: translateY(var(--sticky-header-height));
     }
 }

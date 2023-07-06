@@ -632,18 +632,29 @@ video {
   align-self: flex-start;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(246 51 38 / var(--tw-bg-opacity));
+  background-color: rgb(240 244 248 / var(--tw-bg-opacity));
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   font-size: 12px;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(100 116 138 / var(--tw-text-opacity));
 }
 
 .chip svg {
   width: 16px;
   height: 16px;
+}
+
+.chip-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 51 38 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.chip-primary svg path {
+  fill: #FFFFFF;
 }
 
 .chip-green {
@@ -1446,11 +1457,6 @@ video {
   padding-right: 3.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1459,6 +1465,11 @@ video {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-4 {

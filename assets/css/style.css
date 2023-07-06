@@ -166,12 +166,20 @@
     }
 
     .chip {
-        @apply text-xs font-medium text-white bg-primary-500 h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start gap-[3px];
+        @apply text-xs font-medium  h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start gap-[3px] bg-slate-100 text-slate-500;
     }
 
     .chip svg {
         width: 16px;
         height: 16px;
+    }
+
+    .chip-primary {
+        @apply text-white bg-primary-500;
+    }
+    
+    .chip-primary svg path {
+        @apply fill-white;
     }
 
     .chip-green {

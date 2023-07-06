@@ -1,5 +1,5 @@
 
-// Tabs Scripts
+// Tabs Scripts ************************
 const tabSets = document.querySelectorAll(".tabs-js");
 
 tabSets.forEach(tabSet => {
@@ -100,10 +100,9 @@ tabSets.forEach(tabSet => {
     newTab.focus();
   }
 
-
-
 });
 
+// Swiper scripts ************************
 const swiperNews = new Swiper('#swiper-news', {
   slidesPerView: 6,
   spaceBetween: 24,

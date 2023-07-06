@@ -166,7 +166,7 @@
     }
 
     .chip {
-        @apply text-xs font-medium  h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start gap-[3px] bg-slate-100 text-slate-500;
+        @apply text-xs font-medium h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start gap-[3px] bg-slate-100 text-slate-500;
     }
 
     .chip svg {
@@ -177,7 +177,7 @@
     .chip-primary {
         @apply text-white bg-primary-500;
     }
-    
+
     .chip-primary svg path {
         @apply fill-white;
     }
@@ -488,6 +488,17 @@
     }
 
     .hide-overfolw-6 .card:nth-child(n+7) {
+        display: none;
+    }
+
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 100
+    }
+
+    .sticky-header .hide-sticky {
         display: none;
     }
 }

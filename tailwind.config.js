@@ -12,6 +12,46 @@ module.exports = {
             'ultra': '2560px',
             'tablet-down': { 'max': '768px'},
         },
+        colors: {
+            'primary': {
+                500: '#F63326',
+                700: '#1A56DB',
+            },
+            'amber': {
+                200: '#FCE589',
+                700: '#B35309'
+            },
+            'blue': {
+                100: '#DAE9FD',
+                700: '#1D4ED7',
+            },
+            'gray': {
+                100: '#F3F4F6',
+                300: '#D1D5DB',
+                400: '#9CA3AF',
+                500: '#6B7280',
+                700: '#374151',
+                800: '#1F2937',
+                900: '#111928',
+            },
+            'green': {
+                100: '#DBFBE6',
+                600: '#16A24A'
+            },
+            'slate': {
+                50: '#F7F9FB',
+                100: '#F0F4F8',
+                200: '#E1E7EF',
+                300: '#CAD4E0',
+                400: '#93A2B7',
+                500: '#64748A',
+                600: '#475569',
+                700: '#334155',
+                800: '#1E293B',
+                900: '#0F172A'
+            },
+            'white': '#FFFFFF',                
+        },
         fontSize: {
             'xxs': '10px',
             'xs': '12px',
@@ -51,41 +91,6 @@ module.exports = {
             fontFamily: {
                 'primary': "IRANYekanX, serif"
             },
-            colors: {
-                'primary': {
-                    500: '#F63326',
-                    700: '#1A56DB',
-                },
-                'amber': {
-                    200: '#FCE589',
-                    700: '#B35309'
-                },
-                'blue': {
-                    100: '#DAE9FD',
-                    700: '#1D4ED7',
-                },
-                'gray': {
-                    100: '#F3F4F6',
-                    300: '#D1D5DB',
-                    500: '#6B7280',
-                    900: '#111928',
-                },
-                'green': {
-                    100: '#DBFBE6',
-                    600: '#16A24A'
-                },
-                'slate': {
-                    50: '#F7F9FB',
-                    100: '#F0F4F8',
-                    200: '#E1E7EF',
-                    300: '#CAD4E0',
-                    400: '#93A2B7',
-                    500: '#64748A',
-                    600: '#475569',
-                    700: '#334155',
-                },
-                'white': '#FFFFFF',                
-            },
             spacing: {
 
             },
@@ -101,6 +106,23 @@ module.exports = {
     },
     plugins: [
         require('@tailwindcss/typography'),
-
+        function({ addBase, theme }) {
+            function extractColorVars(colorObj, colorGroup = '') {
+              return Object.keys(colorObj).reduce((vars, colorKey) => {
+                const value = colorObj[colorKey];
+      
+                const newVars =
+                  typeof value === 'string'
+                    ? { [`--color${colorGroup}-${colorKey}`]: value }
+                    : extractColorVars(value, `-${colorKey}`);
+      
+                return { ...vars, ...newVars };
+              }, {});
+            }
+      
+            addBase({
+              ':root': extractColorVars(theme('colors')),
+            });
+          },
     ],
 }

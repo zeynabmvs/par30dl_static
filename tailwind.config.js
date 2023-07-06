@@ -9,7 +9,8 @@ module.exports = {
         screens: {
             'tablet': '768px',
             'desktop': '1728px',
-            'ultra': '2560px'
+            'ultra': '2560px',
+            'tablet-down': { 'max': '768px'},
         },
         fontSize: {
             'xxs': '10px',

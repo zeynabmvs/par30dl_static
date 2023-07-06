@@ -486,4 +486,8 @@
         height: 100%;
         object-fit: cover;
     }
+
+    .hide-overfolw-6 .card:nth-child(n+7) {
+        display: none;
+    }
 }

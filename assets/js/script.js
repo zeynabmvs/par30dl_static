@@ -133,12 +133,15 @@ document.addEventListener('scroll', onScroll);
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem('darkMode'); 
 const htmlElement = document.querySelector('html');
-
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
-const enableDarkMode = () => {
-console.log('enable')
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  var preferredTheme = 'dark'
+} else {
+  var preferredTheme = 'light'
+}
 
+const enableDarkMode = () => {
   // 1. Add the class to the html tag
   htmlElement.classList.add('dark');
   // 2. Update darkMode in localStorage
@@ -146,30 +149,24 @@ console.log('enable')
 }
 
 const disableDarkMode = () => {
-console.log('disable')
-
   // 1. Remove the class from the html tag
   htmlElement.classList.remove('dark');
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
 }
- 
-// If the user already visited and enabled darkMode
+
+// If the user already visited and enabled darkMode or if their preffered color scheme is dark
 // start things off with it on
-if (darkMode === 'enabled') {
+if ((darkMode === 'enabled') || (preferredTheme === 'dark')){
   enableDarkMode();
 }
 
 // When someone clicks the button
 darkModeToggle.addEventListener('click', () => {
-  // console.log('toggle clicked')
 
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode'); 
 
-  console.log('dark mode setting from localStorage: ', darkMode)
-
-  
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
     enableDarkMode();
@@ -179,3 +176,8 @@ darkModeToggle.addEventListener('click', () => {
   }
 });
 
+// an event listener for when preferred color scheme changes
+window.matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', (event) => {
+        event.matches ? enableDarkMode() : disableDarkMode();
+    });

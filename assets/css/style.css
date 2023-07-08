@@ -251,7 +251,7 @@
     }
 
     .tabs-type-2 [role=tablist] {
-        @apply flex justify-around mx-auto bg-slate-100 rounded-full items-center;
+        @apply flex justify-around mx-auto bg-slate-100 dark:bg-slate-700 rounded-full items-center;
     }
 
     .tabs-type-2 .tab-item-wrapper {
@@ -259,7 +259,7 @@
     }
 
     .tabs-type-2 .tab-item {
-        @apply text-slate-700 text-sm font-black flex items-center justify-center h-10 w-full;
+        @apply text-slate-700 dark:text-slate-300 text-sm font-black flex items-center justify-center h-10 w-full;
     }
 
     .tabs-type-2 .tab-item.left {
@@ -273,7 +273,7 @@
     }
 
     .tabs-type-2 [aria-selected=true] {
-        @apply bg-primary-500 text-white;
+        @apply bg-primary-500 text-white ;
     }
 
     .visually-hidden {
@@ -288,7 +288,7 @@
     }
 
     .side-widget {
-        @apply bg-white rounded-base py-[23px] px-6 flex gap-2 flex-col;
+        @apply bg-white dark:bg-slate-800 rounded-base py-[23px] px-6 flex gap-2 flex-col;
     }
 
     .widget-header {
@@ -383,7 +383,7 @@
     }
 
     .post-text {
-        @apply text-p-desktop py-2 text-slate-600;
+        @apply text-p-desktop py-2 text-slate-600 dark:text-slate-300;
     }
 
     .post-more-info {
@@ -395,7 +395,7 @@
     }
 
     .post-meta {
-        @apply text-xxs text-slate-400 font-bold;
+        @apply text-xxs text-slate-400 dark:text-slate-300 font-bold;
     }
 
     .post-meta:not(:last-child) {
@@ -441,6 +441,10 @@
         @apply absolute bottom-4 right-4;
     }
 
+    .post-meta {
+        @apply dark:text-slate-500
+    }
+
     .post-type-3 .post-thumbnail {
         width: 200px;
         height: 156px
@@ -451,11 +455,11 @@
     }
 
     .widget-cat-item {
-        @apply flex h-8 bg-slate-100 rounded-sm gap-2 justify-center items-center text-slate-700 text-xxs font-bold;
+        @apply flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold;
     }
 
     .cat-item-count {
-        @apply text-slate-500 bg-slate-200 pt-px px-0.5 rounded-full text-[8px] font-normal text-center;
+        @apply text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center;
     }
 
     .footer-widget-list {}

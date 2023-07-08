@@ -1423,6 +1423,11 @@ video {
   background-color: rgb(240 244 248 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 231 239 / var(--tw-bg-opacity));
+}
+
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(247 249 251 / var(--tw-bg-opacity));
@@ -1703,18 +1708,7 @@ video {
 
 :root {
   --sticky-header-height: 73px;
-  --bg-color: var(--color-slate-200)
-
-}
-
-.darkmode {
-  --bg-color: #0F172A
-
-
-}
-
-body {
-  background-color: var(--bg-color);
+  /* --bg-color: var(--color-slate-200) */
 }
 
 .ze-container {
@@ -1772,4 +1766,9 @@ body {
   100% {
     transform: translateY(var(--sticky-header-height));
   }
+}
+
+:is(.dark .dark\:bg-slate-900) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }

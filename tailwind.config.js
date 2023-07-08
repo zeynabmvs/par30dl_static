@@ -5,6 +5,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
     content: ["./index.html"],
     mode: 'jit',
+    darkMode: 'class',
     theme: {
         screens: {
             'tablet': '768px',

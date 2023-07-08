@@ -112,7 +112,7 @@ const swiperNews = new Swiper('#swiper-news', {
   },
 });
 
-// // Sticky header ************************
+// Sticky header ************************
 var header = document.querySelector('.header');
 
 
@@ -125,5 +125,57 @@ onScroll = () => {
   }
 }
 
-
 document.addEventListener('scroll', onScroll);
+
+
+// Dark/Light mode switch using a button ************************
+
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode'); 
+const htmlElement = document.querySelector('html');
+
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+const enableDarkMode = () => {
+console.log('enable')
+
+  // 1. Add the class to the html tag
+  htmlElement.classList.add('dark');
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+console.log('disable')
+
+  // 1. Remove the class from the html tag
+  htmlElement.classList.remove('dark');
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+ 
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+  // console.log('toggle clicked')
+
+  // get their darkMode setting
+  darkMode = localStorage.getItem('darkMode'); 
+
+  console.log('dark mode setting from localStorage: ', darkMode)
+
+  
+  // if it not current enabled, enable it
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableDarkMode(); 
+  }
+});
+

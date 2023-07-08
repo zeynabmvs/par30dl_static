@@ -153,7 +153,11 @@
     }
 
     .btn-outline {
-        @apply bg-white border border-slate-400 text-slate-400;
+        @apply bg-white dark:bg-slate-800 border border-slate-400 dark:border-slate-200 text-slate-400 dark:text-slate-200;
+    }
+
+    .btn-outline svg path {
+        @apply dark:fill-slate-200
     }
 
     .tile {
@@ -273,7 +277,7 @@
     }
 
     .tabs-type-2 [aria-selected=true] {
-        @apply bg-primary-500 text-white ;
+        @apply bg-primary-500 text-white dark:text-white;
     }
 
     .visually-hidden {
@@ -465,11 +469,11 @@
     .footer-widget-list {}
 
     .footer-widget-title {
-        @apply pr-1.5 pb-1.5 font-black text-sm text-slate-700;
+        @apply pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300;
     }
 
     .footer-widget-list ul {
-        @apply text-slate-500 font-bold text-sm list-disc list-inside;
+        @apply text-slate-500 dark:text-slate-400 font-bold text-sm list-disc list-inside;
     }
 
     .pagination {

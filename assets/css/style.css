@@ -118,6 +118,16 @@
     }
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
 
 @layer components {
     .icon-shape {
@@ -160,22 +170,8 @@
         @apply dark:fill-slate-200
     }
 
-    .tile {
-        @apply relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden;
-    }
-
     .tile::before {
-        content: "";
-        @apply absolute inset-0;
         background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
-    }
-
-    .tile .tile_content {
-        @apply flex flex-col gap-4 text-right px-6 z-10;
-    }
-
-    .tile .tile_title {
-        @apply text-tile-desktop text-white;
     }
 
     .chip {
@@ -211,138 +207,17 @@
         @apply fill-amber-700
     }
 
-    .card {
-        @apply flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800;
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);
-
-    }
-
-    .card .card_thumbnail {
-        height: 125px;
-        width: auto;
-
-    }
-
-    .card .card_title {
-        @apply text-card-desktop text-slate-700 dark:text-slate-300;
-    }
-
-    .card .card_date {
-        @apply text-slate-400 font-medium text-xs;
-    }
-
-    .card .card_content {
-        @apply flex flex-col gap-2 p-2;
-    }
-
-    .tabs-type-1 .tab-item {
-        @apply text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400;
-    }
-
-    .tabs-type-1 [role=tablist] {
-        @apply inline-flex gap-4
-    }
-
     /* active tab */
     .tabs-type-1 [aria-selected=true] {
         @apply bg-slate-700 dark:bg-slate-500 text-slate-50 dark:text-slate-50 dark:border-none;
-    }
-
-    .tabs-container [role=tablist] {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .tabs-type-2 [role=tablist] {
-        @apply flex justify-around mx-auto bg-slate-100 dark:bg-slate-700 rounded-full items-center;
-    }
-
-    .tabs-type-2 .tab-item-wrapper {
-        @apply basis-1/2 block;
-    }
-
-    .tabs-type-2 .tab-item {
-        @apply text-slate-700 dark:text-slate-300 text-sm font-black flex items-center justify-center h-10 w-full;
-    }
-
-    .tabs-type-2 .tab-item.left {
-        @apply rounded-tl-full rounded-bl-full;
-
-    }
-
-    .tabs-type-2 .tab-item.right {
-        @apply rounded-tr-full rounded-br-full;
-
     }
 
     .tabs-type-2 [aria-selected=true] {
         @apply bg-primary-500 text-white dark:text-white;
     }
 
-    .visually-hidden {
-        clip: rect(0 0 0 0);
-        -webkit-clip-path: inset(50%);
-        clip-path: inset(50%);
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-    }
-
-    .side-widget {
-        @apply bg-white dark:bg-slate-800 rounded-base py-[23px] px-6 flex gap-2 flex-col;
-    }
-
-    .widget-header {
-        @apply inline-flex justify-between items-center gap-2 self-start;
-    }
-
-    .widget-header-text {
-        @apply text-base font-black text-slate-700 dark:text-slate-100;
-    }
-
-    .widget-header-text-sm {
-        @apply text-xs;
-    }
-
     .widget-content {
         @apply flex flex-col gap-8;
-    }
-
-    .widget-type1>a {
-        @apply flex gap-2 items-center;
-    }
-
-    .widget-type1 img {
-        height: 64px;
-        width: 64px;
-    }
-
-    .widget-text-box {
-        @apply flex flex-col items-start justify-center gap-1.5;
-    }
-
-    .widget-item-title {
-        @apply text-slate-700 font-bold text-sm text-right;
-    }
-
-    .widget-item-meta {
-        @apply text-slate-400 font-medium text-xs text-right;
-    }
-
-    .widget-type4>a {
-        @apply flex flex-col gap-2 items-center;
-    }
-
-    .widget-type4 img {
-        @apply w-full h-full
-    }
-
-    .widget-meta-box {
-        display: flex;
-        @apply gap-1.5 justify-start items-center;
     }
 
     .alert {
@@ -361,45 +236,10 @@
         @apply fill-blue-700
     }
 
-    .post:last-child {
-        @apply border-none
-    }
 
     .post-meta-cell {
         @apply inline text-xxs text-slate-500 text-right rounded-sm py-0.5 px-2 w-48;
         background: linear-gradient(270deg, #F0F4F8 0%, rgba(240, 244, 248, 0.51) 48.81%, rgba(240, 244, 248, 0.00) 100%);
-    }
-
-    .post {
-        @apply flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600
-    }
-
-    .post-content-wrapper {
-        @apply flex gap-6;
-    }
-
-    .post-content {
-        @apply flex flex-col items-start gap-1.5;
-    }
-
-    .post-title {
-        @apply text-post-desktop;
-    }
-
-    .post-text {
-        @apply text-p-desktop py-2 text-slate-600 dark:text-slate-300;
-    }
-
-    .post-more-info {
-        @apply pt-4;
-    }
-
-    .post-meta-cells {
-        @apply flex gap-[5px] items-center flex-wrap;
-    }
-
-    .post-meta {
-        @apply text-xxs text-slate-400 dark:text-slate-300 font-bold;
     }
 
     .post-meta:not(:last-child) {
@@ -413,76 +253,6 @@
 
     .post-footer {
         @apply flex items-center justify-between;
-    }
-
-    .post-footer-btns {
-        @apply flex justify-end items-center gap-4;
-    }
-
-    .post-chips {
-        @apply flex justify-center gap-2;
-    }
-
-    .post-type-1 .post-chips {
-        padding-top: 4px
-    }
-
-    .post-type-1 .post-thumbnail {
-        width: 150px;
-        height: 227px
-    }
-
-    .post-type-2 .post-thumbnail {
-        @apply rounded-base;
-        background: linear-gradient(180deg, rgba(17, 25, 40, 0.00) 0%, #111928 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
-    }
-
-    .post-type-2 .img-wrapper {
-        position: relative;
-    }
-
-    .post-type-2 .post-chips {
-        @apply absolute bottom-4 right-4;
-    }
-
-    .post-meta {
-        @apply dark:text-slate-500
-    }
-
-    .post-type-3 .post-thumbnail {
-        width: 200px;
-        height: 156px
-    }
-
-    .post-metas {
-        @apply flex items-center justify-start
-    }
-
-    .widget-cat-item {
-        @apply flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold;
-    }
-
-    .cat-item-count {
-        @apply text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center;
-    }
-
-    .footer-widget-list {}
-
-    .footer-widget-title {
-        @apply pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300;
-    }
-
-    .footer-widget-list ul {
-        @apply text-slate-500 dark:text-slate-400 font-bold text-sm list-disc list-inside;
-    }
-
-    .pagination {
-        @apply border border-gray-300 dark:border-gray-700 rounded-s w-fit;
-        display: flex;
-    }
-
-    .pagination>li>a {
-        @apply bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium;
     }
 
     .pagination> :not(:last-child) {
@@ -511,6 +281,9 @@
     display: none;
 }
 
+.post:last-child {
+    border: none;
+}
 
 .header {
     width: 100%;

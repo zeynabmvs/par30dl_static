@@ -181,3 +181,18 @@ window.matchMedia('(prefers-color-scheme: dark)')
     .addEventListener('change', (event) => {
         event.matches ? enableDarkMode() : disableDarkMode();
     });
+
+// Search form show/hide toggle
+const searchButton = document.querySelector('#search-form-toggle');
+const searchBox = document.querySelector('#search-box');
+
+searchButton.addEventListener('click', () => {
+  if (searchBox.classList.contains('hidden')){
+    searchBox.classList.remove('hidden')
+    searchBox.classList.add('block')
+  } else if (searchBox.classList.contains('block')){
+    searchBox.classList.remove('block')
+    searchBox.classList.add('hidden')
+  }
+
+});

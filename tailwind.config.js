@@ -27,6 +27,7 @@ module.exports = {
                 700: '#1D4ED7',
             },
             'gray': {
+                50: '#F9FAFB',
                 100: '#F3F4F6',
                 300: '#D1D5DB',
                 400: '#9CA3AF',
@@ -107,23 +108,6 @@ module.exports = {
     },
     plugins: [
         require('@tailwindcss/typography'),
-        function({ addBase, theme }) {
-            function extractColorVars(colorObj, colorGroup = '') {
-              return Object.keys(colorObj).reduce((vars, colorKey) => {
-                const value = colorObj[colorKey];
-      
-                const newVars =
-                  typeof value === 'string'
-                    ? { [`--color${colorGroup}-${colorKey}`]: value }
-                    : extractColorVars(value, `-${colorKey}`);
-      
-                return { ...vars, ...newVars };
-              }, {});
-            }
-      
-            addBase({
-              ':root': extractColorVars(theme('colors')),
-            });
-          },
+        // require('@tailwindcss/forms'),
     ],
 }

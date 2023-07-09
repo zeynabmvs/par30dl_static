@@ -170,11 +170,6 @@
         @apply dark:fill-slate-200
     }
 
-     /* TODO: use tailwind class */
-    .tile::before {
-        background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
-    }
-
     .chip {
         @apply text-xs font-medium h-[22px] px-2.5 inline-flex items-center justify-center rounded-full self-start gap-[3px] bg-slate-100 text-slate-500;
     }
@@ -235,13 +230,6 @@
         @apply fill-blue-700
     }
 
-
-     /* TODO: use tailwind class */
-    .post-meta-cell {
-        @apply inline text-xxs text-slate-500 text-right rounded-sm py-0.5 px-2 w-48;
-        background: linear-gradient(270deg, #F0F4F8 0%, rgba(240, 244, 248, 0.51) 48.81%, rgba(240, 244, 248, 0.00) 100%);
-    }
-
     .post-meta:not(:last-child) {
         margin-left: .5rem;
     }
@@ -260,7 +248,6 @@
     .pagination>li>a.active {
         @apply bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white cursor-default;
     }
-
 }
 
 .swiper {

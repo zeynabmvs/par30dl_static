@@ -170,6 +170,7 @@
         @apply dark:fill-slate-200
     }
 
+     /* TODO: use tailwind class */
     .tile::before {
         background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
     }
@@ -207,17 +208,15 @@
         @apply fill-amber-700
     }
 
+     /* TODO: use tailwind class */
     /* active tab */
     .tabs-type-1 [aria-selected=true] {
         @apply bg-slate-700 dark:bg-slate-500 text-slate-50 dark:text-slate-50 dark:border-none;
     }
 
+     /* TODO: use tailwind class */
     .tabs-type-2 [aria-selected=true] {
         @apply bg-primary-500 text-white dark:text-white;
-    }
-
-    .widget-content {
-        @apply flex flex-col gap-8;
     }
 
     .alert {
@@ -237,6 +236,7 @@
     }
 
 
+     /* TODO: use tailwind class */
     .post-meta-cell {
         @apply inline text-xxs text-slate-500 text-right rounded-sm py-0.5 px-2 w-48;
         background: linear-gradient(270deg, #F0F4F8 0%, rgba(240, 244, 248, 0.51) 48.81%, rgba(240, 244, 248, 0.00) 100%);
@@ -251,14 +251,12 @@
         padding-right: .5rem;
     }
 
-    .post-footer {
-        @apply flex items-center justify-between;
-    }
-
+     /* TODO: use tailwind class */
     .pagination> :not(:last-child) {
         @apply border-l border-gray-300 dark:border-gray-700;
     }
-
+    
+     /* TODO: use tailwind class */
     .pagination>li>a.active {
         @apply bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white cursor-default;
     }

@@ -652,6 +652,8 @@ video {
   fill: #E1E7EF;
 }
 
+/* TODO: use tailwind class */
+
 .tile::before {
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.00) 0%, rgba(15, 23, 42, 0.83) 76.96%, #0F172A 100%);
 }
@@ -712,6 +714,8 @@ video {
   fill: #B35309;
 }
 
+/* TODO: use tailwind class */
+
 /* active tab */
 
 .tabs-type-1 [aria-selected=true] {
@@ -728,6 +732,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(247 249 251 / var(--tw-text-opacity));
 }
+
+/* TODO: use tailwind class */
 
 .tabs-type-2 [aria-selected=true] {
   --tw-bg-opacity: 1;
@@ -774,6 +780,8 @@ video {
   fill: #1D4ED7;
 }
 
+/* TODO: use tailwind class */
+
 .post-meta-cell {
   display: inline;
   width: 12rem;
@@ -798,6 +806,8 @@ video {
   padding-right: .5rem;
 }
 
+/* TODO: use tailwind class */
+
 .pagination> :not(:last-child) {
   border-left-width: 1px;
   --tw-border-opacity: 1;
@@ -808,6 +818,8 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
+
+/* TODO: use tailwind class */
 
 .pagination>li>a.active {
   cursor: default;

@@ -155,9 +155,9 @@ const disableDarkMode = () => {
   localStorage.setItem('darkMode', null);
 }
 
-// If the user already visited and enabled darkMode or if their preffered color scheme is dark
+// If the user already visited and enabled darkMode 
 // start things off with it on
-if ((darkMode === 'enabled') || (preferredTheme === 'dark')){
+if ((darkMode === 'enabled') ){
   enableDarkMode();
 }
 

@@ -19,13 +19,15 @@
 <body class="font-primary bg-slate-200 dark:bg-slate-900">
 
     <!-- header-desktop  -->
-    <header class="header h-32 bg-white dark:bg-slate-800 shadow-base flex justify-center items-center mb-8">
+    <header class="relative">
+
+        <div class="header h-32 bg-white dark:bg-slate-800 shadow-base flex justify-center items-center mb-8">
             <div class="flex items-center gap-11 w-full px-14">
                 <a href="#" class="grow-0">
                     <img class="header-logo dark:hidden" src="assets/img/logo.svg" alt="Par30dl">
                     <img class="header-logo hidden dark:block" src="assets/img/logo-dark.svg" alt="Par30dl">
                 </a>
-    
+
                 <div class="grow flex flex-col gap-4 justify-center">
                     <div class="flex justify-between gap-8 hide-sticky">
                         <!-- top bar -->
@@ -37,20 +39,20 @@
                                 <li><a href="#">بهترین بازیهای اندروید</a></li>
                             </ul>
                         </div>
-    
+
                         <!-- adv baner -->
                         <div
                             class="bg-slate-50 dark:bg-slate-700 max-w-[60%] h-12 flex items-center justify-center text-slate-300 font-medium text-xs flex-auto">
                             جایگاه تبلیغات
                         </div>
                     </div>
-    
+
                     <div class="flex items-center justify-between">
                         <!-- nav -->
                         <div class="inline-flex gap-6 justify-between items-center">
-    
+
                             <!-- menu toggle -->
-                            <span class="cursor-pointer">
+                            <span id="mega-menu-toggle" class="cursor-pointer">
                                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="4" cy="5" r="4" fill="#93A2B7" />
@@ -59,7 +61,8 @@
                                     <circle cx="14" cy="15" r="4" fill="#93A2B7" />
                                 </svg>
                             </span>
-                            <ul class="flex gap-6 justify-between items-center text-slate-600 dark:text-slate-300 text-[15px] font-bold">
+                            <ul
+                                class="flex gap-6 justify-between items-center text-slate-600 dark:text-slate-300 text-[15px] font-bold">
                                 <li><a href="#">پارسی دانلود</a></li>
                                 <li><a href="#">بازی کامپیوتر</a></li>
                                 <li><a href="#">نرم افزار</a></li>
@@ -67,25 +70,28 @@
                                 <li><a href="#">مگ</a></li>
                             </ul>
                         </div>
-    
+
                         <!-- header buttons -->
                         <div class="inline-flex gap-2 items-center">
-    
+
                             <!-- dark theme toggle -->
                             <button id="dark-mode-toggle" class="icon-shape dark-mode-toggle">
                                 <!-- moon icon -->
                                 <svg class="-mt-1 dark:hidden" width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path 
+                                    <path
                                         d="M19.0224 14.6224C17.3928 15.3595 15.5772 15.5825 13.8176 15.2618C12.058 14.941 10.4379 14.0917 9.17321 12.827C7.90848 11.5623 7.05917 9.94218 6.73841 8.18258C6.41766 6.42298 6.6407 4.60742 7.37781 2.97778C6.08043 3.5641 4.94465 4.4564 4.06792 5.57814C3.19118 6.69988 2.59967 8.01757 2.34411 9.41816C2.08856 10.8188 2.17661 12.2604 2.60069 13.6195C3.02477 14.9786 3.77224 16.2145 4.77896 17.2212C5.78567 18.228 7.02159 18.9754 8.38068 19.3995C9.73976 19.8236 11.1814 19.9116 12.582 19.6561C13.9826 19.4005 15.3003 18.809 16.4221 17.9323C17.5438 17.0555 18.4361 15.9198 19.0224 14.6224V14.6224Z"
                                         fill="#64748A" />
                                 </svg>
                                 <!-- Sun icon -->
-                                <svg class="hidden dark:block" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="hidden dark:block" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <g id="sun">
-                                    <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M11 2.20001C11.2917 2.20001 11.5715 2.3159 11.7778 2.52219C11.9841 2.72848 12.1 3.00827 12.1 3.30001V4.40001C12.1 4.69175 11.9841 4.97154 11.7778 5.17783C11.5715 5.38412 11.2917 5.50001 11 5.50001C10.7082 5.50001 10.4284 5.38412 10.2221 5.17783C10.0158 4.97154 9.89995 4.69175 9.89995 4.40001V3.30001C9.89995 3.00827 10.0158 2.72848 10.2221 2.52219C10.4284 2.3159 10.7082 2.20001 11 2.20001ZM15.4 11C15.4 12.167 14.9364 13.2861 14.1112 14.1113C13.2861 14.9364 12.1669 15.4 11 15.4C9.833 15.4 8.71384 14.9364 7.88868 14.1113C7.06352 13.2861 6.59995 12.167 6.59995 11C6.59995 9.83306 7.06352 8.7139 7.88868 7.88874C8.71384 7.06358 9.833 6.60001 11 6.60001C12.1669 6.60001 13.2861 7.06358 14.1112 7.88874C14.9364 8.7139 15.4 9.83306 15.4 11ZM14.8896 16.445L15.6672 17.2227C15.8747 17.4231 16.1526 17.534 16.441 17.5315C16.7294 17.5289 17.0053 17.4133 17.2093 17.2093C17.4132 17.0054 17.5289 16.7295 17.5314 16.4411C17.5339 16.1526 17.423 15.8748 17.2226 15.6673L16.445 14.8896C16.2375 14.6892 15.9596 14.5784 15.6712 14.5809C15.3828 14.5834 15.1069 14.6991 14.9029 14.903C14.699 15.107 14.5833 15.3829 14.5808 15.6713C14.5783 15.9597 14.6892 16.2375 14.8896 16.445ZM17.2215 4.77731C17.4278 4.98359 17.5436 5.26333 17.5436 5.55501C17.5436 5.84669 17.4278 6.12643 17.2215 6.33271L16.445 7.11041C16.3435 7.21547 16.2221 7.29927 16.0879 7.35692C15.9537 7.41457 15.8093 7.44492 15.6633 7.44619C15.5172 7.44746 15.3724 7.41962 15.2372 7.36432C15.102 7.30901 14.9792 7.22733 14.8759 7.12405C14.7726 7.02076 14.691 6.89795 14.6356 6.76276C14.5803 6.62758 14.5525 6.48273 14.5538 6.33667C14.555 6.19061 14.5854 6.04627 14.643 5.91207C14.7007 5.77786 14.7845 5.65648 14.8896 5.55501L15.6672 4.77731C15.8735 4.57109 16.1533 4.45525 16.445 4.45525C16.7366 4.45525 17.0164 4.57109 17.2226 4.77731H17.2215ZM18.6999 12.1C18.9917 12.1 19.2715 11.9841 19.4778 11.7778C19.6841 11.5715 19.7999 11.2917 19.7999 11C19.7999 10.7083 19.6841 10.4285 19.4778 10.2222C19.2715 10.0159 18.9917 9.90001 18.6999 9.90001H17.5999C17.3082 9.90001 17.0284 10.0159 16.8221 10.2222C16.6158 10.4285 16.5 10.7083 16.5 11C16.5 11.2917 16.6158 11.5715 16.8221 11.7778C17.0284 11.9841 17.3082 12.1 17.5999 12.1H18.6999ZM11 16.5C11.2917 16.5 11.5715 16.6159 11.7778 16.8222C11.9841 17.0285 12.1 17.3083 12.1 17.6V18.7C12.1 18.9917 11.9841 19.2715 11.7778 19.4778C11.5715 19.6841 11.2917 19.8 11 19.8C10.7082 19.8 10.4284 19.6841 10.2221 19.4778C10.0158 19.2715 9.89995 18.9917 9.89995 18.7V17.6C9.89995 17.3083 10.0158 17.0285 10.2221 16.8222C10.4284 16.6159 10.7082 16.5 11 16.5ZM5.55495 7.11041C5.65708 7.21261 5.77834 7.2937 5.9118 7.34904C6.04527 7.40438 6.18833 7.43288 6.33281 7.43293C6.47729 7.43299 6.62037 7.40458 6.75388 7.34933C6.88738 7.29409 7.0087 7.21309 7.1109 7.11096C7.2131 7.00883 7.29419 6.88757 7.34952 6.75411C7.40486 6.62064 7.43337 6.47758 7.43342 6.3331C7.43347 6.18862 7.40507 6.04554 7.34982 5.91203C7.29458 5.77853 7.21358 5.65721 7.11145 5.55501L6.33265 4.77731C6.12519 4.57694 5.84733 4.46606 5.55891 4.46857C5.27049 4.47108 4.9946 4.58676 4.79065 4.79071C4.5867 4.99466 4.47102 5.27055 4.46851 5.55897C4.466 5.84739 4.57688 6.12525 4.77725 6.33271L5.55495 7.11041ZM7.11035 16.445L6.33265 17.2227C6.12519 17.4231 5.84733 17.534 5.55891 17.5315C5.27049 17.5289 4.9946 17.4133 4.79065 17.2093C4.5867 17.0054 4.47102 16.7295 4.46851 16.4411C4.466 16.1526 4.57688 15.8748 4.77725 15.6673L5.55495 14.8896C5.76241 14.6892 6.04028 14.5784 6.32869 14.5809C6.61711 14.5834 6.893 14.6991 7.09695 14.903C7.3009 15.107 7.41659 15.3829 7.41909 15.6713C7.4216 15.9597 7.31072 16.2375 7.11035 16.445ZM4.39995 12.1C4.69169 12.1 4.97148 11.9841 5.17777 11.7778C5.38406 11.5715 5.49995 11.2917 5.49995 11C5.49995 10.7083 5.38406 10.4285 5.17777 10.2222C4.97148 10.0159 4.69169 9.90001 4.39995 9.90001H3.29995C3.00821 9.90001 2.72842 10.0159 2.52213 10.2222C2.31584 10.4285 2.19995 10.7083 2.19995 11C2.19995 11.2917 2.31584 11.5715 2.52213 11.7778C2.72842 11.9841 3.00821 12.1 3.29995 12.1H4.39995Z" fill="#CAD4E0"/>
+                                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11 2.20001C11.2917 2.20001 11.5715 2.3159 11.7778 2.52219C11.9841 2.72848 12.1 3.00827 12.1 3.30001V4.40001C12.1 4.69175 11.9841 4.97154 11.7778 5.17783C11.5715 5.38412 11.2917 5.50001 11 5.50001C10.7082 5.50001 10.4284 5.38412 10.2221 5.17783C10.0158 4.97154 9.89995 4.69175 9.89995 4.40001V3.30001C9.89995 3.00827 10.0158 2.72848 10.2221 2.52219C10.4284 2.3159 10.7082 2.20001 11 2.20001ZM15.4 11C15.4 12.167 14.9364 13.2861 14.1112 14.1113C13.2861 14.9364 12.1669 15.4 11 15.4C9.833 15.4 8.71384 14.9364 7.88868 14.1113C7.06352 13.2861 6.59995 12.167 6.59995 11C6.59995 9.83306 7.06352 8.7139 7.88868 7.88874C8.71384 7.06358 9.833 6.60001 11 6.60001C12.1669 6.60001 13.2861 7.06358 14.1112 7.88874C14.9364 8.7139 15.4 9.83306 15.4 11ZM14.8896 16.445L15.6672 17.2227C15.8747 17.4231 16.1526 17.534 16.441 17.5315C16.7294 17.5289 17.0053 17.4133 17.2093 17.2093C17.4132 17.0054 17.5289 16.7295 17.5314 16.4411C17.5339 16.1526 17.423 15.8748 17.2226 15.6673L16.445 14.8896C16.2375 14.6892 15.9596 14.5784 15.6712 14.5809C15.3828 14.5834 15.1069 14.6991 14.9029 14.903C14.699 15.107 14.5833 15.3829 14.5808 15.6713C14.5783 15.9597 14.6892 16.2375 14.8896 16.445ZM17.2215 4.77731C17.4278 4.98359 17.5436 5.26333 17.5436 5.55501C17.5436 5.84669 17.4278 6.12643 17.2215 6.33271L16.445 7.11041C16.3435 7.21547 16.2221 7.29927 16.0879 7.35692C15.9537 7.41457 15.8093 7.44492 15.6633 7.44619C15.5172 7.44746 15.3724 7.41962 15.2372 7.36432C15.102 7.30901 14.9792 7.22733 14.8759 7.12405C14.7726 7.02076 14.691 6.89795 14.6356 6.76276C14.5803 6.62758 14.5525 6.48273 14.5538 6.33667C14.555 6.19061 14.5854 6.04627 14.643 5.91207C14.7007 5.77786 14.7845 5.65648 14.8896 5.55501L15.6672 4.77731C15.8735 4.57109 16.1533 4.45525 16.445 4.45525C16.7366 4.45525 17.0164 4.57109 17.2226 4.77731H17.2215ZM18.6999 12.1C18.9917 12.1 19.2715 11.9841 19.4778 11.7778C19.6841 11.5715 19.7999 11.2917 19.7999 11C19.7999 10.7083 19.6841 10.4285 19.4778 10.2222C19.2715 10.0159 18.9917 9.90001 18.6999 9.90001H17.5999C17.3082 9.90001 17.0284 10.0159 16.8221 10.2222C16.6158 10.4285 16.5 10.7083 16.5 11C16.5 11.2917 16.6158 11.5715 16.8221 11.7778C17.0284 11.9841 17.3082 12.1 17.5999 12.1H18.6999ZM11 16.5C11.2917 16.5 11.5715 16.6159 11.7778 16.8222C11.9841 17.0285 12.1 17.3083 12.1 17.6V18.7C12.1 18.9917 11.9841 19.2715 11.7778 19.4778C11.5715 19.6841 11.2917 19.8 11 19.8C10.7082 19.8 10.4284 19.6841 10.2221 19.4778C10.0158 19.2715 9.89995 18.9917 9.89995 18.7V17.6C9.89995 17.3083 10.0158 17.0285 10.2221 16.8222C10.4284 16.6159 10.7082 16.5 11 16.5ZM5.55495 7.11041C5.65708 7.21261 5.77834 7.2937 5.9118 7.34904C6.04527 7.40438 6.18833 7.43288 6.33281 7.43293C6.47729 7.43299 6.62037 7.40458 6.75388 7.34933C6.88738 7.29409 7.0087 7.21309 7.1109 7.11096C7.2131 7.00883 7.29419 6.88757 7.34952 6.75411C7.40486 6.62064 7.43337 6.47758 7.43342 6.3331C7.43347 6.18862 7.40507 6.04554 7.34982 5.91203C7.29458 5.77853 7.21358 5.65721 7.11145 5.55501L6.33265 4.77731C6.12519 4.57694 5.84733 4.46606 5.55891 4.46857C5.27049 4.47108 4.9946 4.58676 4.79065 4.79071C4.5867 4.99466 4.47102 5.27055 4.46851 5.55897C4.466 5.84739 4.57688 6.12525 4.77725 6.33271L5.55495 7.11041ZM7.11035 16.445L6.33265 17.2227C6.12519 17.4231 5.84733 17.534 5.55891 17.5315C5.27049 17.5289 4.9946 17.4133 4.79065 17.2093C4.5867 17.0054 4.47102 16.7295 4.46851 16.4411C4.466 16.1526 4.57688 15.8748 4.77725 15.6673L5.55495 14.8896C5.76241 14.6892 6.04028 14.5784 6.32869 14.5809C6.61711 14.5834 6.893 14.6991 7.09695 14.903C7.3009 15.107 7.41659 15.3829 7.41909 15.6713C7.4216 15.9597 7.31072 16.2375 7.11035 16.445ZM4.39995 12.1C4.69169 12.1 4.97148 11.9841 5.17777 11.7778C5.38406 11.5715 5.49995 11.2917 5.49995 11C5.49995 10.7083 5.38406 10.4285 5.17777 10.2222C4.97148 10.0159 4.69169 9.90001 4.39995 9.90001H3.29995C3.00821 9.90001 2.72842 10.0159 2.52213 10.2222C2.31584 10.4285 2.19995 10.7083 2.19995 11C2.19995 11.2917 2.31584 11.5715 2.52213 11.7778C2.72842 11.9841 3.00821 12.1 3.29995 12.1H4.39995Z"
+                                            fill="#CAD4E0" />
                                     </g>
-                                </svg>                                    
+                                </svg>
                             </button>
                             <div class="relative">
                                 <!-- search button -->
@@ -97,61 +103,118 @@
                                             fill="#64748A" />
                                     </svg>
                                 </button>
-    
+
                                 <!-- Search form -->
-                                <div id="search-box" class="absolute hidden top-[49px] left-0 bg-white dark:bg-slate-700 dark:border dark:border-slate-600 w-[360px] h-[72px] rounded-b-base py-[15px] pr-[17px] pl-[18px]">
-    
-                                    <div class="inline-flex items-center w-[325px] gap-2 border border-gray-300 dark:border-slate-400 bg-gray-50 dark:bg-slate-600 rounded-base py-3 px-4">
+                                <div id="search-box"
+                                    class="absolute z-[100] hidden top-[49px] left-0 bg-white dark:bg-slate-700 dark:border dark:border-slate-600 w-[360px] h-[72px] rounded-b-base py-[15px] pr-[17px] pl-[18px]">
+
+                                    <div
+                                        class="inline-flex items-center w-[325px] gap-2 border border-gray-300 dark:border-slate-400 bg-gray-50 dark:bg-slate-600 rounded-base py-3 px-4">
                                         <span>
-                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <g id="search">
-                                                <path class="dark:fill-slate-600 stroke-slate-400" id="Vector" d="M15.75 15.75L11.25 11.25M12.75 7.5C12.75 8.18944 12.6142 8.87213 12.3504 9.50909C12.0865 10.146 11.6998 10.7248 11.2123 11.2123C10.7248 11.6998 10.146 12.0865 9.50909 12.3504C8.87213 12.6142 8.18944 12.75 7.5 12.75C6.81056 12.75 6.12787 12.6142 5.49091 12.3504C4.85395 12.0865 4.2752 11.6998 3.78769 11.2123C3.30018 10.7248 2.91347 10.146 2.64963 9.50909C2.3858 8.87213 2.25 8.18944 2.25 7.5C2.25 6.10761 2.80312 4.77226 3.78769 3.78769C4.77226 2.80312 6.10761 2.25 7.5 2.25C8.89239 2.25 10.2277 2.80312 11.2123 3.78769C12.1969 4.77226 12.75 6.10761 12.75 7.5Z" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="dark:fill-slate-600 stroke-slate-400" id="Vector"
+                                                        d="M15.75 15.75L11.25 11.25M12.75 7.5C12.75 8.18944 12.6142 8.87213 12.3504 9.50909C12.0865 10.146 11.6998 10.7248 11.2123 11.2123C10.7248 11.6998 10.146 12.0865 9.50909 12.3504C8.87213 12.6142 8.18944 12.75 7.5 12.75C6.81056 12.75 6.12787 12.6142 5.49091 12.3504C4.85395 12.0865 4.2752 11.6998 3.78769 11.2123C3.30018 10.7248 2.91347 10.146 2.64963 9.50909C2.3858 8.87213 2.25 8.18944 2.25 7.5C2.25 6.10761 2.80312 4.77226 3.78769 3.78769C4.77226 2.80312 6.10761 2.25 7.5 2.25C8.89239 2.25 10.2277 2.80312 11.2123 3.78769C12.1969 4.77226 12.75 6.10761 12.75 7.5Z"
+                                                        stroke="#6B7280" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                 </g>
-                                            </svg>                                        
+                                            </svg>
                                         </span>
-                                        <input type="search" class="w-full p-0 m-0 text-gray-500 dark:text-slate-400 bg-gray-50 dark:bg-slate-600 text-sm h-[18px] border-transparent focus:border-transparent focus:outline-none" placeholder="جستجو">
+                                        <input type="search"
+                                            class="w-full p-0 m-0 text-gray-500 dark:text-slate-400 bg-gray-50 dark:bg-slate-600 text-sm h-[18px] border-transparent focus:border-transparent focus:outline-none"
+                                            placeholder="جستجو">
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                             <!-- login/signup button -->
                             <button class="btn btn-gray">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path 
+                                    <path
                                         d="M9.88578 6.55229C10.3859 6.05219 10.6668 5.37391 10.6668 4.66667C10.6668 3.95942 10.3859 3.28115 9.88578 2.78105C9.38568 2.28095 8.70741 2 8.00016 2C7.29292 2 6.61464 2.28095 6.11454 2.78105C5.61445 3.28115 5.3335 3.95942 5.3335 4.66667C5.3335 5.37391 5.61445 6.05219 6.11454 6.55229C6.61464 7.05238 7.29292 7.33333 8.00016 7.33333C8.70741 7.33333 9.38568 7.05238 9.88578 6.55229Z"
                                         fill="#334155" />
-                                    <pathh 
+                                    <pathh
                                         d="M4.70033 10.7002C5.5755 9.825 6.76249 9.33333 8.00016 9.33333C9.23784 9.33333 10.4248 9.825 11.3 10.7002C12.1752 11.5753 12.6668 12.7623 12.6668 14H3.3335C3.3335 12.7623 3.82516 11.5753 4.70033 10.7002Z"
                                         fill="#334155" />
-                                    <path  
+                                    <path
                                         d="M9.88578 6.55229C10.3859 6.05219 10.6668 5.37391 10.6668 4.66667C10.6668 3.95942 10.3859 3.28115 9.88578 2.78105C9.38568 2.28095 8.70741 2 8.00016 2C7.29292 2 6.61464 2.28095 6.11454 2.78105C5.61445 3.28115 5.3335 3.95942 5.3335 4.66667C5.3335 5.37391 5.61445 6.05219 6.11454 6.55229C6.61464 7.05238 7.29292 7.33333 8.00016 7.33333C8.70741 7.33333 9.38568 7.05238 9.88578 6.55229Z"
-                                        stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path  
+                                        stroke="#334155" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
                                         d="M4.70033 10.7002C5.5755 9.825 6.76249 9.33333 8.00016 9.33333C9.23784 9.33333 10.4248 9.825 11.3 10.7002C12.1752 11.5753 12.6668 12.7623 12.6668 14H3.3335C3.3335 12.7623 3.82516 11.5753 4.70033 10.7002Z"
-                                        stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        stroke="#334155" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                                 ثبت نام / ورود
                             </button>
-    
+
                         </div>
                     </div>
-    
+
                 </div>
             </div>
-        
-      </header>
+        </div>
 
-      
-    <main class="ze-container">
+        <div id="mega-menu" class="absolute right-0 w-full bg-slate-100 dark:bg-slate-700 shadow-md -mt-8 z-[50] px-9 pt-6 pb-8">
+            <!-- Footer Widgets -->
+            <div class="flex gap-6 p-2 h-44">
+ 
+                    <div class="ml-[72px]">
+                        <h5 class="ml-3 pb-4 font-bold text-sm text-slate-700 dark:text-slate-300">بازی کامپیوتر</h5>
+                        <ul class="pr-3 text-slate-600 dark:text-slate-300 text-sm">
+                            <li><a href="#">آنلاین دونفره</a></li>
+                            <li><a href="#">استراتژیک</a></li>
+                            <li><a href="#">بازی های ویژه</a></li>
+                            <li><a href="#">پازلی</a></li>
+                            <li><a href="#">ترس و بقا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ml-[72px]">
+                        <h5 class="ml-3 pb-4 font-bold text-sm text-slate-700 dark:text-slate-300">انیمیشن</h5>
+                        <ul class="pr-3 text-slate-600 dark:text-slate-300 text-sm">
+                            <li><a href="#">آنلاین دونفره</a></li>
+                            <li><a href="#">استراتژیک</a></li>
+                            <li><a href="#">استراتژیک</a></li>
+                            <li><a href="#">اکشن</a></li>
+                            <li><a href="#">بازی های ویژه</a></li>
+                            <li><a href="#">پازلی</a></li>
+                            <li><a href="#">ترس و بقا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ml-[72px]">
+                        <h5 class="ml-3 pb-4 font-bold text-sm text-slate-700 dark:text-slate-300">فیلم و سریال</h5>
+                        <ul class="pr-3 text-slate-600 dark:text-slate-300 text-sm">
+                            <li><a href="#">آنلاین دونفره</a></li>
+                            <li><a href="#">استراتژیک</a></li>
+                            <li><a href="#">اکشن</a></li>
+                            <li><a href="#">بازی های ویژه</a></li>
+                            <li><a href="#">پازلی</a></li>
+                            <li><a href="#">ترس و بقا</a></li>
+                        </ul>
+                    </div>
+                
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <main class="ze-container z-[30]">
         <div class="flex flex-col gap-8 mb-8">
 
             <!-- Tiles, Features Section -->
             <section class="grid gap-6 grid-rows-2 grid-cols-4 ">
 
                 <!-- Tile no.1 -->
-                <a href="#" class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
+                <a href="#"
+                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
                     <div class="flex flex-col gap-4 text-right px-6 z-10">
                         <span class="chip chip-primary">بازی کامپیوتر</span>
                         <h3 class="text-tile-desktop text-white">نقد و بررسی بازی Resident Evil 4</h3>
@@ -159,7 +222,8 @@
                 </a>
 
                 <!-- Tile no.2 -->
-                <a href="#" class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature1.png')] h-[424px] row-span-2 col-span-2">
+                <a href="#"
+                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature1.png')] h-[424px] row-span-2 col-span-2">
                     <div class="flex flex-col gap-4 text-right px-6 z-10">
                         <span class="chip chip-primary">نقد و بررسی بازی</span>
                         <h3 class="text-tile-desktop text-white">نقد و بررسی فیلم Transformers: Rise of the Beasts</h3>
@@ -167,16 +231,19 @@
                 </a>
 
                 <!-- Tile no.3 -->
-                <a href="#" class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
+                <a href="#"
+                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
                     <div class="flex flex-col gap-4 text-right px-6 z-10">
                         <span class="chip chip-primary">بازی کامپیوتر</span>
-                        <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ</h3>
+                        <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
+                        </h3>
                     </div>
                 </a>
 
                 <!-- Tile no.4 -->
                 <a href="#">
-                    <div class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
+                    <div
+                        class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
                         <div class="flex flex-col gap-4 text-right px-6 z-10">
                             <span class="chip chip-primary">نقد و بررسی بازی</span>
                             <h3 class="text-tile-desktop text-white">نقد و بررسی بازی Resident Evil 4</h3>
@@ -185,10 +252,12 @@
                 </a>
 
                 <!-- Tile no.5 -->
-                <a href="#" class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
+                <a href="#"
+                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
                     <div class="flex flex-col gap-4 text-right px-6 z-10">
                         <span class="chip chip-primary">نقد و بررسی بازی</span>
-                        <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ</h3>
+                        <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
+                        </h3>
                     </div>
                 </a>
 
@@ -209,9 +278,9 @@
 
                 <!-- Carousel -->
                 <div class="" id="swiper-news">
-                <div class="tablet:hide-overfolw-6 grid grid-cols-6 gap-6 py-0.5">
+                    <div class="tablet:hide-overfolw-6 grid grid-cols-6 gap-6 py-0.5">
 
-                    <!-- <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                        <!-- <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                         <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                             alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                         <div class="flex flex-col gap-2 p-2">
@@ -230,66 +299,78 @@
                         </div>
                     </a> -->
 
-                    <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
-                        <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
-                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                        <div class="flex flex-col gap-2 p-2">
-                            <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
-                                عرضه می‌شود</h5>
-                            <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
-                        </div>
-                    </a>
+                        <a href="#"
+                            class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                            <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
+                                alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                            <div class="flex flex-col gap-2 p-2">
+                                <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق
+                                    بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
+                                    عرضه می‌شود</h5>
+                                <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
+                            </div>
+                        </a>
 
-                    <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
-                        <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
-                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                        <div class="flex flex-col gap-2 p-2">
-                            <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon</h5>
-                            <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
-                        </div>
-                    </a>
+                        <a href="#"
+                            class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                            <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
+                                alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                            <div class="flex flex-col gap-2 p-2">
+                                <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی
+                                    سرورهای دو نسخه اول Forza Horizon</h5>
+                                <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
+                            </div>
+                        </a>
 
-                    <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
-                        <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
-                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                        <div class="flex flex-col gap-2 p-2">
-                            <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
-                                عرضه می‌شود</h5>
-                            <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
-                        </div>
-                    </a>
+                        <a href="#"
+                            class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                            <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
+                                alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                            <div class="flex flex-col gap-2 p-2">
+                                <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق
+                                    بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
+                                    عرضه می‌شود</h5>
+                                <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
+                            </div>
+                        </a>
 
-                    <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
-                        <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
-                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                        <div class="flex flex-col gap-2 p-2">
-                            <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon</h5>
-                            <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
-                        </div>
-                    </a>
+                        <a href="#"
+                            class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                            <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
+                                alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                            <div class="flex flex-col gap-2 p-2">
+                                <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی
+                                    سرورهای دو نسخه اول Forza Horizon</h5>
+                                <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
+                            </div>
+                        </a>
 
 
-                    <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
-                        <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
-                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                        <div class="flex flex-col gap-2 p-2">
-                            <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
-                                عرضه می‌شود</h5>
-                            <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
-                        </div>
-                    </a>
+                        <a href="#"
+                            class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                            <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
+                                alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                            <div class="flex flex-col gap-2 p-2">
+                                <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق
+                                    بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹
+                                    عرضه می‌شود</h5>
+                                <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
+                            </div>
+                        </a>
 
-                    <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
-                        <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
-                            alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
-                        <div class="flex flex-col gap-2 p-2">
-                            <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon</h5>
-                            <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
-                        </div>
-                    </a>
+                        <a href="#"
+                            class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                            <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
+                                alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
+                            <div class="flex flex-col gap-2 p-2">
+                                <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی
+                                    سرورهای دو نسخه اول Forza Horizon</h5>
+                                <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
+                            </div>
+                        </a>
 
+                    </div>
                 </div>
-            </div>
             </div>
 
 
@@ -308,10 +389,18 @@
                     <!-- tab items -->
                     <div>
                         <ul class="inline-flex gap-4 list-none m-0 p-0">
-                            <li><a href="#tab1_content" id="tab-1" class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">فیلمهای محبوب</a></li>
-                            <li><a href="#tab2_content" id="tab-2" class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">بیشترین دیدگاه</a></li>
-                            <li><a href="#tab3_content" id="tab-3" class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">هوش مصنوعی</a></li>
-                            <li><a href="#tab4_content" id="tab-4" class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">انتخاب سردبیر</a></li>
+                            <li><a href="#tab1_content" id="tab-1"
+                                    class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">فیلمهای
+                                    محبوب</a></li>
+                            <li><a href="#tab2_content" id="tab-2"
+                                    class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">بیشترین
+                                    دیدگاه</a></li>
+                            <li><a href="#tab3_content" id="tab-3"
+                                    class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">هوش
+                                    مصنوعی</a></li>
+                            <li><a href="#tab4_content" id="tab-4"
+                                    class="tab-item text-slate-500 dark:text-slate-400  bg-white dark:bg-slate-900 text-sm font-bold inline-flex items-center justify-center h-[34px] px-4 rounded-full dark:border dark:border-slate-400">انتخاب
+                                    سردبیر</a></li>
                         </ul>
                     </div>
 
@@ -319,11 +408,13 @@
                         <div id="tab1_content" aria-labelledby="tab-1">
 
                             <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -331,22 +422,26 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی
+                                            از موسیقی اصلی بازی Marvel's Spider-Man 2
                                             مشخص
                                             شد</h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -354,21 +449,25 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -376,11 +475,13 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
@@ -393,11 +494,13 @@
 
                             <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -405,22 +508,26 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image2.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی
+                                            از موسیقی اصلی بازی Marvel's Spider-Man 2
                                             مشخص
                                             شد</h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -428,21 +535,25 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image2.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -450,11 +561,13 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
@@ -467,11 +580,13 @@
 
                             <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -479,22 +594,26 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی
+                                            از موسیقی اصلی بازی Marvel's Spider-Man 2
                                             مشخص
                                             شد</h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -502,21 +621,25 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image2.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -524,11 +647,13 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
@@ -541,11 +666,13 @@
 
                             <div class="grid grid-cols-6 grid-rows-1 gap-6 justify-start">
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image2.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -553,22 +680,26 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image2.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی از موسیقی اصلی بازی Marvel's Spider-Man 2
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">تاریخ رونمایی
+                                            از موسیقی اصلی بازی Marvel's Spider-Man 2
                                             مشخص
                                             شد</h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image4.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -576,21 +707,25 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image3.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">بازی Payday 3
+                                            برای خلق بهترین تجربه ممکن تنها روی
                                             کنسول‌های
                                             نسل ۹
                                             عرضه می‌شود</h5>
@@ -598,11 +733,13 @@
                                     </div>
                                 </a>
 
-                                <a href="#" class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
+                                <a href="#"
+                                    class="flex flex-col gap-2 rounded-base h-56 bg-white dark:bg-slate-800 shadow-base">
                                     <img src="assets/img/card-image1.png" class="h-[125px] w-auto"
                                         alt="بازی Payday 3 برای خلق بهترین تجربه ممکن تنها روی کنسول‌های نسل ۹ عرضه می‌شود">
                                     <div class="flex flex-col gap-2 p-2">
-                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
+                                        <h5 class="text-card-desktop text-slate-700 dark:text-slate-300">اعلام زمان
+                                            خاموشی دائمی سرورهای دو نسخه اول Forza Horizon
                                         </h5>
                                         <span class="text-slate-400 font-medium text-xs">۱۲ تیر ۱۴۰۲</span>
                                     </div>
@@ -636,8 +773,10 @@
                             <div class="flex flex-col items-center ">
                                 <div class="grid grid-rows-1 grid-cols-[1fr_5px_1fr] gap-2">
                                     <div class="flex flex-col justify-center items-end my-4">
-                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۱۶ خرداد ۱۴۰۲</span>
-                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June 6</span>
+                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۱۶ خرداد
+                                            ۱۴۰۲</span>
+                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June
+                                            6</span>
                                     </div>
                                     <div class="h-full border-l border-dotted border-slate-300 px-0.5 relative">
                                         <div
@@ -645,14 +784,17 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col justify-start items-start my-4">
-                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Final Fantasy XVI</span>
+                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Final Fantasy
+                                            XVI</span>
                                         <span class="text-sm font-normal text-slate-700 dark:text-slate-300">بازی</span>
                                     </div>
                                 </div>
                                 <div class="grid grid-rows-1 grid-cols-[1fr_5px_1fr] gap-2">
                                     <div class="flex flex-col justify-center items-end my-4">
-                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۱ تیر ۱۴۰۲</span>
-                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June 6</span>
+                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۱ تیر
+                                            ۱۴۰۲</span>
+                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June
+                                            6</span>
                                     </div>
                                     <div class="h-full border-l border-dotted border-slate-300 px-0.5 relative">
                                         <div
@@ -660,15 +802,18 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col justify-start items-start my-4">
-                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Armored Core VI Fires Of
+                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Armored Core
+                                            VI Fires Of
                                             Rubicon</span>
                                         <span class="text-sm font-normal text-slate-700 dark:text-slate-300">بازی</span>
                                     </div>
                                 </div>
                                 <div class="grid grid-rows-1 grid-cols-[1fr_5px_1fr] gap-2">
                                     <div class="flex flex-col justify-center items-end my-4">
-                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۳ شهریور ۱۴۰۲</span>
-                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June 6</span>
+                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۳ شهریور
+                                            ۱۴۰۲</span>
+                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June
+                                            6</span>
                                     </div>
                                     <div class="h-full border-l border-dotted border-slate-300 px-0.5 relative">
                                         <div
@@ -676,14 +821,17 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col justify-start items-start my-4">
-                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Mortal Kombat 1</span>
+                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Mortal Kombat
+                                            1</span>
                                         <span class="text-sm font-normal text-slate-700 dark:text-slate-300">بازی</span>
                                     </div>
                                 </div>
                                 <div class="grid grid-rows-1 grid-cols-[1fr_5px_1fr] gap-2">
                                     <div class="flex flex-col justify-center items-end my-4">
-                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۲۸ شهریور ۱۴۰۲</span>
-                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June 6</span>
+                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۲۸ شهریور
+                                            ۱۴۰۲</span>
+                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June
+                                            6</span>
                                     </div>
                                     <div class="h-full border-l border-dotted border-slate-300 px-0.5 relative">
                                         <div
@@ -691,14 +839,17 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col justify-start items-start my-4">
-                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Dianblo IV</span>
+                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Dianblo
+                                            IV</span>
                                         <span class="text-sm font-normal text-slate-700 dark:text-slate-300">بازی</span>
                                     </div>
                                 </div>
                                 <div class="grid grid-rows-1 grid-cols-[1fr_5px_1fr] gap-2">
                                     <div class="flex flex-col justify-center items-end my-4">
-                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۲۰ مهر ۱۴۰۲</span>
-                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June 6</span>
+                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۲۰ مهر
+                                            ۱۴۰۲</span>
+                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June
+                                            6</span>
                                     </div>
                                     <div class="h-full border-l border-dotted border-slate-300 px-0.5 relative">
                                         <div
@@ -706,14 +857,17 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col justify-start items-start my-4">
-                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Assassins Creed Mirage</span>
+                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Assassins
+                                            Creed Mirage</span>
                                         <span class="text-sm font-normal text-slate-700 dark:text-slate-300">بازی</span>
                                     </div>
                                 </div>
                                 <div class="grid grid-rows-1 grid-cols-[1fr_5px_1fr] gap-2">
                                     <div class="flex flex-col justify-center items-end my-4">
-                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۲۱ مهر ۱۴۰۲</span>
-                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June 6</span>
+                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">۲۱ مهر
+                                            ۱۴۰۲</span>
+                                        <span class="text-xs font-light text-slate-500 dark:text-slate-300">2023 June
+                                            6</span>
                                     </div>
                                     <div class="h-full border-l border-dotted border-slate-300 px-0.5 relative">
                                         <div
@@ -721,7 +875,8 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col justify-start items-start my-4">
-                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Lords of the Fallen</span>
+                                        <span class="text-sm font-black text-slate-700 dark:text-slate-50">Lords of the
+                                            Fallen</span>
                                         <span class="text-sm font-normal text-slate-700 dark:text-slate-300">بازی</span>
                                     </div>
                                 </div>
@@ -748,9 +903,11 @@
                                 <a href="#" class="flex gap-2 items-center">
                                     <img height="64" width="64" src="assets/img/app-icon1.png" alt="">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -759,9 +916,11 @@
                                 <a href="#" class="flex gap-2 items-center">
                                     <img height="64" width="64" src="assets/img/app-icon2.png" alt="">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">دانلود نرم افزار فشرده سازی وینرر – WinRAR v6.11
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            دانلود نرم افزار فشرده سازی وینرر – WinRAR v6.11
                                             Final x86/x64</h5>
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -770,9 +929,11 @@
                                 <a href="#" class="flex gap-2 items-center">
                                     <img height="64" width="64" src="assets/img/app-icon3.png" alt="">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">دانلود نرم افزار ادوب آکروبات ویندوز Adobe Acrobat
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            دانلود نرم افزار ادوب آکروبات ویندوز Adobe Acrobat
                                             Pro DC v2022.001.20117</h5>
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -781,10 +942,12 @@
                                 <a href="#" class="flex gap-2 items-center">
                                     <img height="64" width="64" src="assets/img/app-icon4.png" alt="">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">دانلود ورژن جدید دانلود منیجر Internet Download
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            دانلود ورژن جدید دانلود منیجر Internet Download
                                             Manager 6.41.1 + Portable</h5>
 
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -793,9 +956,11 @@
                                 <a href="#" class="flex gap-2 items-center">
                                     <img height="64" width="64" src="assets/img/app-icon5.png" alt="">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">دانلود آخرین نسخه نرم افزار کی ام پلیر KMPlayer
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            دانلود آخرین نسخه نرم افزار کی ام پلیر KMPlayer
                                             2022.5.26.12</h5>
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -804,10 +969,12 @@
                                 <a href="#" class="flex gap-2 items-center">
                                     <img height="64" width="64" src="assets/img/app-icon6.png" alt="">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">دانلود آخرین نسخه درایور کارت گرافیک انویدیا
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            دانلود آخرین نسخه درایور کارت گرافیک انویدیا
                                             nVIDIA GeForce 512.95
                                         </h5>
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -834,12 +1001,15 @@
                                     <img class="w-full h-full" src="assets/img/hardware.png"
                                         alt="SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
 
                                         <div class="flex gap-1.5 justify-start items-center">
-                                            <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲ </span>
-                                            <span class="text-slate-400 font-medium text-xs text-right">| ۱۴۳ دیدگاه</span>
+                                            <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                                ۱۴۰۲ </span>
+                                            <span class="text-slate-400 font-medium text-xs text-right">| ۱۴۳
+                                                دیدگاه</span>
                                         </div>
 
                                     </div>
@@ -851,12 +1021,15 @@
                                     <img class="w-full h-full" src="assets/img/hardware.png"
                                         alt="SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
 
                                         <div class="flex gap-1.5 justify-start items-center">
-                                            <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲ </span>
-                                            <span class="text-slate-400 font-medium text-xs text-right">| ۱۴۳ دیدگاه</span>
+                                            <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                                ۱۴۰۲ </span>
+                                            <span class="text-slate-400 font-medium text-xs text-right">| ۱۴۳
+                                                دیدگاه</span>
                                         </div>
 
                                     </div>
@@ -871,18 +1044,20 @@
 
 
                     <div class="posts-wrapper flex flex-col gap-6 items-center">
-                       
+
                         <!-- Posts -->
                         <div class="posts flex flex-col gap-6 p-6 bg-white dark:bg-slate-800 rounded-base">
 
-                            <div class="post flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600 post-type-1">
+                            <div
+                                class="post flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600 post-type-1">
                                 <div class="flex gap-6">
                                     <a href="#" class="shrink-0">
                                         <img src="assets/img/thumbnail.png" width="150" height="227" alt="">
                                     </a>
                                     <div class="flex flex-col items-start gap-1.5">
                                         <a href="#">
-                                            <h2 class="text-post-desktop text-slate-700 dark:text-slate-50">دانلود انیمیشن عنصری دوبله فارسی Elemental
+                                            <h2 class="text-post-desktop text-slate-700 dark:text-slate-50">دانلود
+                                                انیمیشن عنصری دوبله فارسی Elemental
                                                 2023</h2>
                                         </a>
                                         <div class="flex justify-center gap-2 pt-1">
@@ -910,7 +1085,8 @@
 
                                                 آپدیت</span>
                                         </div>
-                                        <p class="text-p-desktop py-2 text-slate-600 dark:text-slate-300">دانلود انیمیشن Elemental دوبله فارسی –
+                                        <p class="text-p-desktop py-2 text-slate-600 dark:text-slate-300">دانلود انیمیشن
+                                            Elemental دوبله فارسی –
                                             انیمیشن عنصری در مورد دو شخصیت بنام های امبر و وید بوده که در شهری که
                                             ساکنانش
                                             آتش ، اب ، زمین و هوا بوده اند قصد زندگی دارند. در این میان مشکلات جدیدی به
@@ -939,8 +1115,10 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center justify-start">
-                                        <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۳ خرداد ۱۴۰۲</span>
-                                        <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۱۲ دیدگاه</span>
+                                        <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۳
+                                            خرداد ۱۴۰۲</span>
+                                        <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۱۲
+                                            دیدگاه</span>
                                     </div>
                                     <div class="flex justify-end items-center gap-4">
                                         <button class="btn btn-outline">
@@ -967,9 +1145,12 @@
                                 </div>
                             </div>
 
-                            <div class="post flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600 post-type-2">
+                            <div
+                                class="post flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600 post-type-2">
                                 <div class="relative">
-                                    <a href="#"><img src="assets/img/thumbnail2.png" class="rounded-base bg-[#d3d3d3] bg-gradient-to-b from-[#11192800] from-0% via-[#111928] via-100%" alt=""></a>
+                                    <a href="#"><img src="assets/img/thumbnail2.png"
+                                            class="rounded-base bg-[#d3d3d3] bg-gradient-to-b from-[#11192800] from-0% via-[#111928] via-100%"
+                                            alt=""></a>
                                     <div class="flex justify-center gap-2 absolute bottom-4 right-4">
                                         <span class="chip chip-primary">پارسی مگ</span>
                                         <span class="chip chip-yellow">
@@ -1000,15 +1181,21 @@
                                 <div class="flex gap-6">
                                     <div class="flex flex-col items-start gap-1.5">
                                         <a href="#">
-                                            <h2 class="text-post-desktop text-slate-700 dark:text-slate-50">استفاده از هوش مصنوعی برای تولید تیتراژ آغازین سریال
+                                            <h2 class="text-post-desktop text-slate-700 dark:text-slate-50">استفاده از
+                                                هوش مصنوعی برای تولید تیتراژ آغازین سریال
                                                 Secret
                                                 Invasion مارول</h2>
                                         </a>
                                         <div class="flex items-center justify-start">
-                                            <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۳ خرداد ۱۴۰۲</span>
-                                            <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۱۲ دیدگاه</span>
+                                            <span
+                                                class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۳
+                                                خرداد ۱۴۰۲</span>
+                                            <span
+                                                class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۱۲
+                                                دیدگاه</span>
                                         </div>
-                                        <p class="text-p-desktop py-2 text-slate-600 dark:text-slate-300">تیتراژ افتتاحیه Secret Invasion باعث شکل‌گیری بحث‌های زیادی
+                                        <p class="text-p-desktop py-2 text-slate-600 dark:text-slate-300">تیتراژ
+                                            افتتاحیه Secret Invasion باعث شکل‌گیری بحث‌های زیادی
                                             در
                                             فضای مجازی شده است که احتمالا بسیاری از افراد را تشویق به تماشای این سریال
                                             کوتاه
@@ -1022,7 +1209,8 @@
                                 </div>
                             </div>
 
-                            <div class="post flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600 post-type-3">
+                            <div
+                                class="post flex flex-col gap-6 pb-6 border-b border-slate-200 dark:border-slate-600 post-type-3">
                                 <div class="flex gap-6">
                                     <a href="#" class="shrink-0"><img src="assets/img/thumbnail3.png"
                                             class="post-thumbnail" alt="" height="156" width="200"></a>
@@ -1031,13 +1219,19 @@
                                             <span class="chip chip-primary">اخبار بازی</span>
                                         </div>
                                         <a href="#">
-                                            <h2 class="text-post-desktop text-slate-700 dark:text-slate-50">برتری ۲۰ درصدی RTX 4060 بر RTX 3060 بدون DLSS3</h2>
+                                            <h2 class="text-post-desktop text-slate-700 dark:text-slate-50">برتری ۲۰
+                                                درصدی RTX 4060 بر RTX 3060 بدون DLSS3</h2>
                                         </a>
                                         <div class="flex items-center justify-start">
-                                            <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۳ خرداد ۱۴۰۲</span>
-                                            <span class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۱۲ دیدگاه</span>
+                                            <span
+                                                class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۳
+                                                خرداد ۱۴۰۲</span>
+                                            <span
+                                                class="post-meta text-xxs text-slate-400 dark:text-slate-300 font-bold">۱۲
+                                                دیدگاه</span>
                                         </div>
-                                        <p class="text-p-desktop py-2 text-slate-600 dark:text-slate-300">انویدیا ادعا می‌کند که کارت گرافیک RTX 4060 حتی بدون
+                                        <p class="text-p-desktop py-2 text-slate-600 dark:text-slate-300">انویدیا ادعا
+                                            می‌کند که کارت گرافیک RTX 4060 حتی بدون
                                             بهره‌گیری
                                             از مزایای Frame Generation و DLSS3 بیست درصد سریع‌تر از RTX 3060 از نسل قبل
                                             عمل
@@ -1050,7 +1244,8 @@
 
                         <!-- pagination -->
                         <ul class="pagination flex border border-gray-300 dark:border-gray-700 rounded-s w-fit">
-                            <li><a href="#" class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">
+                            <li><a href="#"
+                                    class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g id="chevron-right">
@@ -1061,13 +1256,24 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li><a href="#" class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۱</a></li>
-                            <li><a href="#" class="active bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۲</a></li>
-                            <li><a href="#" class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۳</a></li>
-                            <li><a href="#" class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">...</a></li>
-                            <li><a href="#" class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۱۰۰</a></li>
+                            <li><a href="#"
+                                    class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۱</a>
+                            </li>
+                            <li><a href="#"
+                                    class="active bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۲</a>
+                            </li>
+                            <li><a href="#"
+                                    class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۳</a>
+                            </li>
+                            <li><a href="#"
+                                    class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">...</a>
+                            </li>
+                            <li><a href="#"
+                                    class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">۱۰۰</a>
+                            </li>
                             <li>
-                                <a href="#" class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">
+                                <a href="#"
+                                    class="bg-white dark:bg-gray-800 text-slate-500 dark:text-gray-400 flex justify-center items-center h-8 px-3 text-sm font-medium">
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g id="chevron-left">
@@ -1087,15 +1293,21 @@
                 <aside class="basis-1/4 flex flex-col gap-6">
 
                     <!-- Sidebar widget: tab -->
-                    <div class="side-widget bg-white dark:bg-slate-800 rounded-base py-[23px] px-6 flex gap-2 flex-col widget-tabs">
+                    <div
+                        class="side-widget bg-white dark:bg-slate-800 rounded-base py-[23px] px-6 flex gap-2 flex-col widget-tabs">
                         <div class="tabs-js">
                             <div class="tabs-container tabs-type-2">
                                 <div>
-                                    <ul class="full-width-ul flex justify-around mx-auto bg-slate-100 dark:bg-slate-700 rounded-full items-center">
+                                    <ul
+                                        class="full-width-ul flex justify-around mx-auto bg-slate-100 dark:bg-slate-700 rounded-full items-center">
                                         <li class="basis-1/2 block"><a href="#categories_tab1_content"
-                                                id="categories-tab-1" class="tab-item text-slate-700 dark:text-slate-300 text-sm font-black flex items-center justify-center h-10 w-full rounded-tr-full rounded-br-full">بازی</a></li>
+                                                id="categories-tab-1"
+                                                class="tab-item text-slate-700 dark:text-slate-300 text-sm font-black flex items-center justify-center h-10 w-full rounded-tr-full rounded-br-full">بازی</a>
+                                        </li>
                                         <li class="basis-1/2 block"><a href="#categories_tab2_content"
-                                                id="categories-tab-2" class="tab-item text-slate-700 dark:text-slate-300 text-sm font-black flex items-center justify-center h-10 w-full rounded-tl-full rounded-bl-full">انیمیشن</a></li>
+                                                id="categories-tab-2"
+                                                class="tab-item text-slate-700 dark:text-slate-300 text-sm font-black flex items-center justify-center h-10 w-full rounded-tl-full rounded-bl-full">انیمیشن</a>
+                                        </li>
                                     </ul>
                                 </div>
 
@@ -1103,33 +1315,48 @@
                                     <div id="categories_tab1_content" aria-labelledby="categories-tab-1">
 
                                         <div class="grid grid-cols-2 grid-rows-5 gap-1 py-4">
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">پازلی<span
-                                                class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">125</span>
-                                            </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">انیمیشن<span
-                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">25</span>
-                                            </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">اکشن<span
-                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">12</span>
-                                            </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">ترس و بقا<span
-                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">4</span>
-                                            </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">پازلی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">پازلی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">125</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">چند نفره آنلاین<span
-                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">5</span></a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">شبیه ساز<span
-                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">86</span>
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">انیمیشن<span
+                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">25</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">جهان باز<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">اکشن<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">12</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">فانتزی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">ترس
+                                                و بقا<span
+                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">4</span>
+                                            </a>
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">پازلی<span
+                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">125</span>
+                                            </a>
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">چند
+                                                نفره آنلاین<span
+                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">5</span></a>
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">شبیه
+                                                ساز<span
+                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">86</span>
+                                            </a>
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">جهان
+                                                باز<span
+                                                    class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">12</span>
+                                            </a>
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">فانتزی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">10</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">علمی تخیلی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">علمی
+                                                تخیلی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">25</span></a>
                                         </div>
 
@@ -1137,24 +1364,34 @@
                                     <div id="categories_tab2_content" aria-labelledby="categories-tab-1">
 
                                         <div class="grid grid-cols-2 grid-rows-5 gap-1 py-4">
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">ترس و بقا<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">ترس
+                                                و بقا<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">4</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">پازلی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">پازلی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">125</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">کمدی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">کمدی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">5</span></a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">دیزنی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">دیزنی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">86</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">جهان باز<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">جهان
+                                                باز<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">12</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">فانتزی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">فانتزی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">10</span>
                                             </a>
-                                            <a href="#" class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">علمی تخیلی<span
+                                            <a href="#"
+                                                class="flex h-8 bg-slate-100 dark:bg-slate-700 rounded-sm gap-2 justify-center items-center text-slate-700 dark:text-slate-300 text-xxs font-bold">علمی
+                                                تخیلی<span
                                                     class="text-slate-500 dark:text-slate-100 bg-slate-200 dark:bg-slate-500 pt-px px-0.5 rounded-full text-[8px] font-normal text-center">25</span></a>
                                         </div>
 
@@ -1181,9 +1418,11 @@
                             <div class="widget-item">
                                 <a href="#">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
-                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر ۱۴۰۲</span>
+                                        <span class="text-slate-400 font-medium text-xs text-right">آپدیت ۱۲ تیر
+                                            ۱۴۰۲</span>
                                     </div>
                                 </a>
                             </div>
@@ -1209,7 +1448,8 @@
                             <div class="widget-item">
                                 <a href="#">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
                                     </div>
                                 </a>
@@ -1218,7 +1458,8 @@
                             <div class="widget-item">
                                 <a href="#">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
                                     </div>
                                 </a>
@@ -1227,7 +1468,8 @@
                             <div class="widget-item">
                                 <a href="#">
                                     <div class="flex flex-col items-start justify-center gap-1.5">
-                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
+                                        <h5 class="text-slate-700 font-bold text-sm text-right dark:text-slate-300">
+                                            SnagIt 2022.0.216407نرم افزار عکس برداری از دسکتاپ
                                         </h5>
                                     </div>
                                 </a>
@@ -1264,7 +1506,8 @@
 
                     <div class="col-span-1">
                         <div class="footer-widget-list">
-                            <h5 class="pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300">پارسی دانلود</h5>
+                            <h5 class="pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300">پارسی دانلود
+                            </h5>
                             <ul class="text-slate-500 dark:text-slate-400 font-bold text-sm list-disc list-inside">
                                 <li><a href="#">تماس با ما</a></li>
                                 <li><a href="#">تبلیغات سایت پارسی دانلود</a></li>
@@ -1275,7 +1518,8 @@
                     </div>
                     <div class="col-span-1">
                         <div class="footer-widget-list">
-                            <h5 class="pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300">خانواده پارسی دانلود</h5>
+                            <h5 class="pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300">خانواده
+                                پارسی دانلود</h5>
                             <ul class="text-slate-500 dark:text-slate-400 font-bold text-sm list-disc list-inside">
                                 <li><a href="#">تاپس ایران</a></li>
                                 <li><a href="#">پارسی نیوز (اخبار بازی و فیلم)</a></li>
@@ -1285,7 +1529,8 @@
                     </div>
                     <div class="col-span-1">
                         <div class="footer-widget-list">
-                            <h5 class="pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300">موضوعات برتر</h5>
+                            <h5 class="pr-1.5 pb-1.5 font-black text-sm text-slate-700 dark:text-slate-300">موضوعات برتر
+                            </h5>
                             <ul class="text-slate-500 dark:text-slate-400 font-bold text-sm list-disc list-inside">
                                 <li><a href="#">دانلود بازی کامپیوتر</a></li>
                                 <li><a href="#">دانلود انیمیشن</a></li>

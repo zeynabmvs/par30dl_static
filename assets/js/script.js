@@ -190,9 +190,24 @@ searchButton.addEventListener('click', () => {
   if (searchBox.classList.contains('hidden')){
     searchBox.classList.remove('hidden')
     searchBox.classList.add('block')
-  } else if (searchBox.classList.contains('block')){
+  } else {
     searchBox.classList.remove('block')
     searchBox.classList.add('hidden')
+  }
+
+});
+
+// Mega menu show/hide toggle
+const megaButton = document.querySelector('#mega-menu-toggle');
+const megaMenu = document.querySelector('#mega-menu');
+
+megaButton.addEventListener('click', () => {
+  if (megaMenu.classList.contains('hidden')){
+    megaMenu.classList.remove('hidden')
+    megaMenu.classList.add('block')
+  } else {
+    megaMenu.classList.remove('block')
+    megaMenu.classList.add('hidden')
   }
 
 });

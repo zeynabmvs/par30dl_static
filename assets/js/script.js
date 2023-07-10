@@ -118,7 +118,7 @@ var header = document.querySelector('.header');
 
 onScroll = () => {
   var scrolledPage = Math.round(window.pageYOffset);
-  if(scrolledPage > 60) {
+  if (scrolledPage > 60) {
     header.classList.add('sticky');
   } else {
     header.classList.remove('sticky');
@@ -131,7 +131,7 @@ document.addEventListener('scroll', onScroll);
 // Dark/Light mode switch using a button ************************
 
 // check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem('darkMode'); 
+let darkMode = localStorage.getItem('darkMode');
 const htmlElement = document.querySelector('html');
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
@@ -157,7 +157,7 @@ const disableDarkMode = () => {
 
 // If the user already visited and enabled darkMode 
 // start things off with it on
-if ((darkMode === 'enabled') ){
+if ((darkMode === 'enabled')) {
   enableDarkMode();
 }
 
@@ -165,29 +165,29 @@ if ((darkMode === 'enabled') ){
 darkModeToggle.addEventListener('click', () => {
 
   // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode'); 
+  darkMode = localStorage.getItem('darkMode');
 
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
     enableDarkMode();
-  // if it has been enabled, turn it off  
-  } else {  
-    disableDarkMode(); 
+    // if it has been enabled, turn it off  
+  } else {
+    disableDarkMode();
   }
 });
 
 // an event listener for when preferred color scheme changes
 window.matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', (event) => {
-        event.matches ? enableDarkMode() : disableDarkMode();
-    });
+  .addEventListener('change', (event) => {
+    event.matches ? enableDarkMode() : disableDarkMode();
+  });
 
 // Search form show/hide toggle
 const searchButton = document.querySelector('#search-form-toggle');
 const searchBox = document.querySelector('#search-box');
 
 searchButton.addEventListener('click', () => {
-  if (searchBox.classList.contains('hidden')){
+  if (searchBox.classList.contains('hidden')) {
     searchBox.classList.remove('hidden')
     searchBox.classList.add('block')
   } else {
@@ -202,7 +202,7 @@ const megaButton = document.querySelector('#mega-menu-toggle');
 const megaMenu = document.querySelector('#mega-menu');
 
 megaButton.addEventListener('click', () => {
-  if (megaMenu.classList.contains('hidden')){
+  if (megaMenu.classList.contains('hidden')) {
     megaMenu.classList.remove('hidden')
     megaMenu.classList.add('block')
   } else {
@@ -210,4 +210,53 @@ megaButton.addEventListener('click', () => {
     megaMenu.classList.add('hidden')
   }
 
+});
+
+// Open modal to play trailer
+// Get all open and close buttons
+const openButtons = document.querySelectorAll('.open-modal-btn');
+const closeButtons = document.querySelectorAll('.close-modal');
+const modals = document.querySelectorAll('.modal')
+
+// Function to handle outside click events for each modal
+function handleOutsideClick(event) {
+  const modalId = event.target.dataset.modalTarget;
+  const modal = document.getElementById(modalId);
+  const modalContent = modal.querySelector('.modal-content');
+
+  if (!modalContent.contains(event.target)) {
+    closeModal();
+  }
+}
+
+// Function to open the modal
+function openModal(event) {
+  const modalId = event.target.dataset.modalTarget;
+  const modal = document.getElementById(modalId);
+
+  modal.style.display = 'block';
+  const videoElem = modal.querySelector('video');
+  videoElem.play();
+}
+
+// Function to close the modal
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+
+  modal.style.display = 'none';
+
+  // Pause the video
+  const videoElem = modal.querySelector('video');
+  videoElem.pause();
+}
+
+// Attach click event listeners to each open button
+openButtons.forEach(button => {
+  button.addEventListener('click', openModal);
+});
+
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    closeModal(button.closest('.modal').id)
+  });
 });

@@ -260,3 +260,24 @@ closeButtons.forEach(button => {
     closeModal(button.closest('.modal').id)
   });
 });
+
+
+document.querySelector('#jsbtnHamburgur').addEventListener('click', function () {
+  document.querySelector('.header-mobile').classList.toggle('open');
+});
+
+
+// drawer open list items
+const listTitles = document.querySelectorAll('.drawer .list-title');
+
+listTitles.forEach(title => {
+  title.addEventListener('click', () => {
+    const subMenu = title.nextElementSibling;
+
+    if (subMenu.style.display === 'none') {
+      subMenu.style.display = 'block';
+    } else {
+      subMenu.style.display = 'none';
+    }
+  });
+});

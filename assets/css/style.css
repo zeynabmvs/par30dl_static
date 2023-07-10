@@ -106,6 +106,10 @@
     --sticky-header-height: 73px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .ze-container {
     max-width: 90%;
     margin-left: auto;
@@ -309,4 +313,22 @@
     .hide-for-desktop {
         display: none;
     }
+}
+
+.header-mobile.open .hamburger-btn > span:first-child {
+    transform: rotate(45deg);
+}
+.header-mobile.open .hamburger-btn > span:nth-child(2) {
+    opacity: 0;
+}
+.header-mobile.open .hamburger-btn > span:last-child {
+    transform: rotate(-45deg);
+}
+
+.drawer {
+    transition: right 0.3s ease;
+
+}
+.header-mobile.open .drawer{
+    right: 0;
 }

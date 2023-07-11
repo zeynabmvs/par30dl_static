@@ -642,10 +642,16 @@ video {
   background-color: rgb(240 244 248 / var(--tw-bg-opacity));
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(100 116 138 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .chip {
+    font-size: 12px;
+  }
 }
 
 .chip svg {
@@ -867,6 +873,14 @@ video {
   z-index: 50;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -923,6 +937,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -933,6 +951,10 @@ video {
 
 .ml-\[72px\] {
   margin-left: 72px;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -999,6 +1021,10 @@ video {
   height: 125px;
 }
 
+.h-\[145px\] {
+  height: 145px;
+}
+
 .h-\[18px\] {
   height: 18px;
 }
@@ -1055,6 +1081,10 @@ video {
   width: 5px;
 }
 
+.w-\[96px\] {
+  width: 96px;
+}
+
 .w-auto {
   width: auto;
 }
@@ -1093,14 +1123,6 @@ video {
 }
 
 .basis-1\/2 {
-  flex-basis: 50%;
-}
-
-.basis-1\/4 {
-  flex-basis: 25%;
-}
-
-.basis-2\/4 {
   flex-basis: 50%;
 }
 
@@ -1230,6 +1252,10 @@ video {
 
 .self-start {
   align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .self-center {
@@ -1433,10 +1459,6 @@ video {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1505,6 +1527,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-\[10px\] {
@@ -2154,12 +2181,40 @@ body {
     margin-bottom: 0px;
   }
 
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:flex {
+    display: flex;
+  }
+
   .tablet\:grid {
     display: grid;
   }
 
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-\[227px\] {
+    height: 227px;
+  }
+
+  .tablet\:w-\[150px\] {
+    width: 150px;
+  }
+
   .tablet\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .tablet\:basis-1\/4 {
+    flex-basis: 25%;
+  }
+
+  .tablet\:basis-2\/4 {
+    flex-basis: 50%;
   }
 
   .tablet\:grid-cols-5 {
@@ -2174,6 +2229,14 @@ body {
     flex-direction: row;
   }
 
+  .tablet\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .tablet\:p-6 {
+    padding: 1.5rem;
+  }
+
   .tablet\:pr-1 {
     padding-right: 0.25rem;
   }
@@ -2182,8 +2245,22 @@ body {
     padding-right: 0.375rem;
   }
 
+  .tablet\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .tablet\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .tablet\:text-right {
     text-align: right;
+  }
+
+  .tablet\:text-p-desktop {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 400;
   }
 }
 

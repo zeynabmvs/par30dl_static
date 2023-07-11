@@ -274,6 +274,7 @@ body {
     border: none;
 }
 
+
 .header {
     width: 100%;
     position: relative;
@@ -291,6 +292,14 @@ body {
 
 .sticky .hide-sticky {
     display: none;
+}
+
+ul.li-padding-24 li:not(:last-child){
+    padding-left: 24px;
+}
+
+ul.li-padding-16 li:not(:last-child){
+    padding-left: 16px;
 }
 
 @keyframes goDown {
@@ -348,4 +357,4 @@ body {
 
 .body-scroll-lock {
     overflow: hidden;
-  }
+}

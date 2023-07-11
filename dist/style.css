@@ -572,6 +572,10 @@ video {
   }
 }
 
+.btn svg {
+  flex-shrink: 0;
+}
+
 .btn-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(240 244 248 / var(--tw-bg-opacity));
@@ -657,6 +661,7 @@ video {
 .chip svg {
   width: 16px;
   height: 16px;
+  flex-shrink: 0
 }
 
 .chip-primary {
@@ -741,6 +746,10 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(17 25 40 / var(--tw-text-opacity));
+}
+
+.alert svg {
+  flex-shrink: 0
 }
 
 .alert svg path {
@@ -2217,6 +2226,14 @@ ul.li-padding-16 li:not(:last-child){
     flex-basis: 50%;
   }
 
+  .tablet\:basis-2\/3 {
+    flex-basis: 66.666667%;
+  }
+
+  .tablet\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
   .tablet\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -2259,6 +2276,18 @@ ul.li-padding-16 li:not(:last-child){
 }
 
 @media (min-width: 1024px) {
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:basis-1\/4 {
+    flex-basis: 25%;
+  }
+
+  .laptop\:basis-2\/4 {
+    flex-basis: 50%;
+  }
+
   .laptop\:gap-6 {
     gap: 1.5rem;
   }

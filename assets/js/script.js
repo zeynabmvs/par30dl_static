@@ -133,7 +133,7 @@ document.addEventListener('scroll', onScroll);
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem('darkMode');
 const htmlElement = document.querySelector('html');
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
+const darkModeToggles = document.querySelectorAll('.dark-mode-toggle');
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
   var preferredTheme = 'dark'
@@ -162,7 +162,8 @@ if ((darkMode === 'enabled')) {
 }
 
 // When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
+darkModeToggles.forEach(darkModeToggle => {
+  darkModeToggle.addEventListener('click', () => {
 
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode');
@@ -175,6 +176,8 @@ darkModeToggle.addEventListener('click', () => {
     disableDarkMode();
   }
 });
+});
+
 
 // an event listener for when preferred color scheme changes
 window.matchMedia('(prefers-color-scheme: dark)')
@@ -183,19 +186,24 @@ window.matchMedia('(prefers-color-scheme: dark)')
   });
 
 // Search form show/hide toggle
-const searchButton = document.querySelector('#search-form-toggle');
-const searchBox = document.querySelector('#search-box');
+const searchButtons = document.querySelectorAll('.search-form-toggle');
 
-searchButton.addEventListener('click', () => {
-  if (searchBox.classList.contains('hidden')) {
-    searchBox.classList.remove('hidden')
-    searchBox.classList.add('block')
-  } else {
-    searchBox.classList.remove('block')
-    searchBox.classList.add('hidden')
-  }
+searchButtons.forEach(searchButton => {
+  searchButton.addEventListener('click', () => {
+    console.log(searchButton.getAttribute('data-target-box'))
+    const searchBox = document.getElementById(searchButton.getAttribute('data-target-box'));
 
-});
+    if (searchBox.classList.contains('hidden')) {
+      searchBox.classList.remove('hidden')
+      searchBox.classList.add('block')
+    } else {
+      searchBox.classList.remove('block')
+      searchBox.classList.add('hidden')
+    }
+  
+  });
+})
+
 
 // Mega menu show/hide toggle
 const megaButton = document.querySelector('#mega-menu-toggle');
@@ -261,9 +269,13 @@ closeButtons.forEach(button => {
   });
 });
 
+const drawer = document.querySelector('.drawer')
+const headerMobile = document.querySelector('.header-mobile')
 
 document.querySelector('#jsbtnHamburgur').addEventListener('click', function () {
-  document.querySelector('.header-mobile').classList.toggle('open');
+  headerMobile.classList.toggle('open');
+  console.log(headerMobile.offsetHeight)
+  drawer.style.top = headerMobile.offsetHeight + 'px'
 });
 
 

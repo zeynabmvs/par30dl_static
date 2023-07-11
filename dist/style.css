@@ -2279,8 +2279,17 @@ ul.li-padding-16 li:not(:last-child){
     gap: 1.5rem;
   }
 
+  .tablet\:bg-none {
+    background-image: none;
+  }
+
   .tablet\:p-6 {
     padding: 1.5rem;
+  }
+
+  .tablet\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .tablet\:pb-6 {
@@ -2301,6 +2310,10 @@ ul.li-padding-16 li:not(:last-child){
 
   .tablet\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .tablet\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .tablet\:text-right {

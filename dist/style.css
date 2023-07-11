@@ -552,17 +552,24 @@ video {
 
 .btn {
   display: inline-flex;
-  height: 2.125rem;
+  height: 34px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
   border-radius: 0.5rem;
-  padding-right: .9166rem;
-  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-left: 0.625rem;
   font-size: 12px;
   line-height: normal;
   font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    padding-right: 0.875rem;
+    padding-left: 0.75rem;
+  }
 }
 
 .btn-gray {
@@ -731,12 +738,12 @@ video {
   height: 72px;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-\[15px\] {
@@ -951,19 +958,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-\[15px\] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.py-\[0px\] {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .pb-1 {
@@ -1427,4 +1429,10 @@ body {
 :is(.dark .dark\:text-slate-400) {
   --tw-text-opacity: 1;
   color: rgb(147 162 183 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .laptop\:gap-6 {
+    gap: 1.5rem;
+  }
 }

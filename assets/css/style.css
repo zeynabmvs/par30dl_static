@@ -147,7 +147,7 @@ body {
     }
 
     .btn {
-        @apply inline-flex flex-row gap-2 justify-between items-center rounded-base pr-[.9166rem] pl-3 h-[2.125rem] text-btn-desktop;
+        @apply inline-flex flex-row gap-2 justify-between items-center rounded-base pr-3 pl-2.5 laptop:pr-3.5 laptop:pl-3 h-[34px] text-btn-desktop;
     }
 
     .btn-gray {

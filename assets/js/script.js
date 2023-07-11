@@ -1,4 +1,6 @@
 
+const body = document.querySelector('body');
+
 // Tabs Scripts ************************
 const tabSets = document.querySelectorAll(".tabs-js");
 
@@ -185,7 +187,7 @@ window.matchMedia('(prefers-color-scheme: dark)')
     event.matches ? enableDarkMode() : disableDarkMode();
   });
 
-// Search form show/hide toggle
+// Search form show/hide toggle ************************************
 const searchButtons = document.querySelectorAll('.search-form-toggle');
 
 searchButtons.forEach(searchButton => {
@@ -205,7 +207,7 @@ searchButtons.forEach(searchButton => {
 })
 
 
-// Mega menu show/hide toggle
+// Mega menu show/hide toggle ************************************
 const megaButton = document.querySelector('#mega-menu-toggle');
 const megaMenu = document.querySelector('#mega-menu');
 
@@ -220,7 +222,7 @@ megaButton.addEventListener('click', () => {
 
 });
 
-// Open modal to play trailer
+// Open modal to play trailer ************************************
 // Get all open and close buttons
 const openButtons = document.querySelectorAll('.open-modal-btn');
 const closeButtons = document.querySelectorAll('.close-modal');
@@ -237,7 +239,7 @@ function handleOutsideClick(event) {
   }
 }
 
-// Function to open the modal
+// Function to open the modal 
 function openModal(event) {
   const modalId = event.target.dataset.modalTarget;
   const modal = document.getElementById(modalId);
@@ -269,17 +271,19 @@ closeButtons.forEach(button => {
   });
 });
 
+// Open drawer ************************************
+
 const drawer = document.querySelector('.drawer')
 const headerMobile = document.querySelector('.header-mobile')
 
 document.querySelector('#jsbtnHamburgur').addEventListener('click', function () {
   headerMobile.classList.toggle('open');
-  console.log(headerMobile.offsetHeight)
+  body.classList.toggle('body-scroll-lock');
   drawer.style.top = headerMobile.offsetHeight + 'px'
 });
 
 
-// drawer open list items
+// In drawer: open list items ************************************
 const listTitles = document.querySelectorAll('.drawer .list-title');
 
 listTitles.forEach(title => {

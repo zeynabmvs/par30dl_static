@@ -104,30 +104,6 @@ tabSets.forEach(tabSet => {
 
 });
 
-// Swiper scripts ************************
-const swiperNews = new Swiper('#swiper-news', {
-  slidesPerView: 6,
-  spaceBetween: 24,
-  pagination: {
-    // el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-
-const swiperTiles = new Swiper('#swiper-tiles', {
-  slidesPerView: 'auto',
-  spaceBetween: 16,
-
-  breakpoints: {
-    // when window width is >= 768px
-    768: {
-      enabled: false
-    },
-
-}});
-
-
 
 // Sticky header ************************
 var header = document.querySelector('.header');

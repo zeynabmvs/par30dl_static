@@ -31,6 +31,18 @@ const enableSwiper = function() {
       },
   
   }});
+
+  swiperNews = new Swiper('#swiper-news', {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    pagination: {
+      // el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  
+
 }
 
 //////////////////////////////////////////////////////////////////
@@ -39,14 +51,3 @@ breakpoint.addListener(breakpointChecker);
 // kickstart
 breakpointChecker();
 
-
-
-// const swiperNews = new Swiper('#swiper-news', {
-//     slidesPerView: 6,
-//     spaceBetween: 24,
-//     pagination: {
-//       // el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-  

@@ -1,6 +1,14 @@
 
 const body = document.querySelector('body');
 
+function toggleClass(element, className) {
+  if (element.classList.contains(className)) {
+    element.classList.remove(className);
+  } else {
+    element.classList.add(className);
+  }
+}
+
 // Tabs Scripts ************************
 const tabSets = document.querySelectorAll(".tabs-js");
 
@@ -268,8 +276,8 @@ const drawer = document.querySelector('.drawer')
 const headerMobile = document.querySelector('.header-mobile')
 
 document.querySelector('#jsbtnHamburgur').addEventListener('click', function () {
-  headerMobile.classList.toggle('open');
-  body.classList.toggle('body-scroll-lock');
+  toggleClass(headerMobile, 'open')
+  toggleClass(body, 'body-scroll-lock')
   drawer.style.top = headerMobile.offsetHeight + 'px'
 });
 

@@ -230,7 +230,7 @@ body {
     .alert svg {
         flex-shrink: 0
     }
-    
+
     .alert svg path {
         @apply fill-gray-900
     }
@@ -334,6 +334,11 @@ ul.li-padding-16 li:not(:last-child){
     }
 }
 
+@media only screen and (min-width: 769px) {
+    .posts-wrapper {
+        background-color: transparent;
+    }
+}
 .header-mobile.open .hamburger-btn > span:first-child {
     transform: rotate(45deg);
 }

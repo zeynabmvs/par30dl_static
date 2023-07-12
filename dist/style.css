@@ -890,6 +890,22 @@ video {
   order: 2;
 }
 
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-first {
+  order: -9999;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -2199,6 +2215,18 @@ ul.li-padding-16 li:not(:last-child){
 }
 
 @media (min-width: 768px) {
+  .tablet\:order-1 {
+    order: 1;
+  }
+
+  .tablet\:order-2 {
+    order: 2;
+  }
+
+  .tablet\:order-3 {
+    order: 3;
+  }
+
   .tablet\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -2324,6 +2352,10 @@ ul.li-padding-16 li:not(:last-child){
     font-size: 12px;
     line-height: normal;
     font-weight: 400;
+  }
+
+  .tablet\:text-base {
+    font-size: 16px;
   }
 }
 

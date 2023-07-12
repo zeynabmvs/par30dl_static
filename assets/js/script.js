@@ -114,6 +114,21 @@ const swiperNews = new Swiper('#swiper-news', {
   },
 });
 
+
+const swiperTiles = new Swiper('#swiper-tiles', {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      enabled: false
+    },
+
+}});
+
+
+
 // Sticky header ************************
 var header = document.querySelector('.header');
 

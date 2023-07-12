@@ -373,3 +373,7 @@ ul.li-padding-16 li:not(:last-child){
 .body-scroll-lock {
     overflow: hidden;
 }
+
+.tile {
+    @apply w-[296px] h-[188px] tablet:w-auto;
+}

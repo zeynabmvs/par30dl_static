@@ -342,63 +342,62 @@
     <main class="ze-container z-[30]">
         <div class="flex flex-col gap-8 mb-8">
 
-            <!-- Tiles, Features Section -->
-            <section class="grid gap-6 grid-rows-2 grid-cols-4 ">
+            <div class="swiper" id="swiper-tiles">
+                <!-- Tiles, Features Section -->
+                <div class="swiper-wrapper tablet:grid tablet:gap-6 tablet:grid-rows-2 tablet:grid-cols-4 ">
 
-
-                <!-- The big center Tile -->
-                <a href="#"
-                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature1.png')] h-[424px] row-span-2 col-span-2">
-                    <div class="flex flex-col gap-4 text-right px-6 z-10">
-                        <span class="chip chip-primary">نقد و بررسی بازی</span>
-                        <h3 class="text-tile-desktop text-white">نقد و بررسی فیلم Transformers: Rise of the Beasts</h3>
-                    </div>
-                </a>
-
-                <!-- Tile Item -->
-                <a href="#"
-                    class="tile order-first before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
-                    <div class="flex flex-col gap-4 text-right px-6 z-10">
-                        <span class="chip chip-primary">بازی کامپیوتر</span>
-                        <h3 class="text-tile-desktop text-white">نقد و بررسی بازی Resident Evil 4</h3>
-                    </div>
-                </a>
-
-
-                <!-- Tile Item -->
-                <a href="#"
-                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
-                    <div class="flex flex-col gap-4 text-right px-6 z-10">
-                        <span class="chip chip-primary">بازی کامپیوتر</span>
-                        <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
-                        </h3>
-                    </div>
-                </a>
-
-                <!-- Tile Item -->
-                <a href="#">
-                    <div
-                        class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
+                    <!-- The big center Tile -->
+                    <a href="#"
+                        class="tile swiper-slide before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature1.png')] tablet:h-[424px] tablet:row-span-2 tablet:col-span-2">
                         <div class="flex flex-col gap-4 text-right px-6 z-10">
                             <span class="chip chip-primary">نقد و بررسی بازی</span>
+                            <h3 class="text-tile-mobile tablet:text-tile-desktop text-white">نقد و بررسی فیلم Transformers: Rise of the Beasts</h3>
+                        </div>
+                    </a>
+
+                    <!-- Tile Item -->
+                    <a href="#"
+                        class="tile swiper-slide tablet:order-first before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature2.png')]">
+                        <div class="flex flex-col gap-4 text-right px-6 z-10">
+                            <span class="chip chip-primary">بازی کامپیوتر</span>
                             <h3 class="text-tile-desktop text-white">نقد و بررسی بازی Resident Evil 4</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <!-- Tile Item -->
-                <a href="#"
-                    class="tile before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
-                    <div class="flex flex-col gap-4 text-right px-6 z-10">
-                        <span class="chip chip-primary">نقد و بررسی بازی</span>
-                        <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
-                        </h3>
-                    </div>
-                </a>
 
-                <!-- End Tiles -->
-            </section>
+                    <!-- Tile Item -->
+                    <a href="#"
+                        class="tile swiper-slide before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
+                        <div class="flex flex-col gap-4 text-right px-6 z-10">
+                            <span class="chip chip-primary">بازی کامپیوتر</span>
+                            <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
+                            </h3>
+                        </div>
+                    </a>
 
+                    <!-- Tile Item -->
+                    <a href="#"
+                        class="tile swiper-slide before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
+                        <div class="flex flex-col gap-4 text-right px-6 z-10">
+                            <span class="chip chip-primary">بازی کامپیوتر</span>
+                            <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
+                            </h3>
+                        </div>
+                    </a>
+
+                    <!-- Tile Item -->
+                    <a href="#"
+                        class="tile swiper-slide before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#0f172a00] before:from-0% before:via-[#0f172ad4] before:via-[76.96%] before:to-[#0F172A] before:to-100% relative rounded-base flex flex-col justify-end h-[200px] pb-[23px] bg-no-repeat bg-cover bg-center overflow-hidden bg-[url('../assets/img/feature3.png')]">
+                        <div class="flex flex-col gap-4 text-right px-6 z-10">
+                            <span class="chip chip-primary">بازی کامپیوتر</span>
+                            <h3 class="text-tile-desktop text-white">بهترین بازی های ماجراجویی برای کامپیوتر در طول تاریخ
+                            </h3>
+                        </div>
+                    </a>
+
+                    <!-- End Tiles -->
+                </div>
+            </div>
             <!-- News Carousel -->
             <div class="flex flex-col justify-start gap-2">
 

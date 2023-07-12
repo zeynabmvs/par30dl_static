@@ -894,20 +894,8 @@ video {
   order: 3;
 }
 
-.order-first {
-  order: -9999;
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
 }
 
 .m-0 {
@@ -1054,10 +1042,6 @@ video {
   height: 34px;
 }
 
-.h-\[424px\] {
-  height: 424px;
-}
-
 .h-\[5px\] {
   height: 5px;
 }
@@ -1171,10 +1155,6 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -1185,10 +1165,6 @@ video {
 
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-5 {
@@ -1682,6 +1658,12 @@ video {
   font-weight: 900;
 }
 
+.text-tile-mobile {
+  font-size: 17px;
+  line-height: 150%;
+  font-weight: 900;
+}
+
 .text-xs {
   font-size: 12px;
 }
@@ -2053,6 +2035,17 @@ ul.li-padding-16 li:not(:last-child){
   overflow: hidden;
 }
 
+.tile {
+  height: 188px;
+  width: 296px;
+}
+
+@media (min-width: 768px) {
+  .tile {
+    width: auto;
+  }
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2206,8 +2199,16 @@ ul.li-padding-16 li:not(:last-child){
     order: 2;
   }
 
+  .tablet\:order-first {
+    order: -9999;
+  }
+
   .tablet\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .tablet\:row-span-2 {
+    grid-row: span 2 / span 2;
   }
 
   .tablet\:mb-0 {
@@ -2238,6 +2239,10 @@ ul.li-padding-16 li:not(:last-child){
     height: 227px;
   }
 
+  .tablet\:h-\[424px\] {
+    height: 424px;
+  }
+
   .tablet\:w-\[150px\] {
     width: 150px;
   }
@@ -2262,12 +2267,20 @@ ul.li-padding-16 li:not(:last-child){
     flex-basis: 66.666667%;
   }
 
+  .tablet\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .tablet\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .tablet\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .tablet\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .tablet\:flex-row {
@@ -2312,6 +2325,12 @@ ul.li-padding-16 li:not(:last-child){
 
   .tablet\:text-base {
     font-size: 16px;
+  }
+
+  .tablet\:text-tile-desktop {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 900;
   }
 }
 

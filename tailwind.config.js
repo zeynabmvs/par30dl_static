@@ -86,6 +86,10 @@ module.exports = {
                 lineHeight: '150%',
                 fontWeight: '900',
             }],
+            'tile-mobile': ['17px', {
+                lineHeight: '150%',
+                fontWeight: '900',
+            }],
         },
         extend: {
             boxShadow: {

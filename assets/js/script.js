@@ -10,7 +10,9 @@ function toggleClass(element, className) {
 }
 
 // Tabs Scripts ************************
-const tabSets = document.querySelectorAll(".tabs-js");
+// each tabset has a .tabs-js class, first find all tabsets and then 
+// create tabs for each tabset, each tabset has a .tabs-container class
+const tabSets = document.querySelectorAll(".tabset-js");
 
 tabSets.forEach(tabSet => {
   const tabsContainer = tabSet.querySelector(".tabs-container");

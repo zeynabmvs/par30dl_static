@@ -276,10 +276,6 @@ body {
     object-fit: cover;
 }
 
-.xyz {
-    width: auto;
-}
-
 .hide-overfolw-6 .card:nth-child(n+7) {
     display: none;
 }

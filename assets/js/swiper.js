@@ -21,6 +21,16 @@ const breakpointChecker = function () {
         if (swiperTab1 !== undefined) {
             swiperTab1.destroy(true, true);
         }
+        if (swiperTab2 !== undefined) {
+            swiperTab2.destroy(true, true);
+        }
+        if (swiperTab3 !== undefined) {
+            swiperTab3.destroy(true, true);
+        }
+        if (swiperTab4 !== undefined) {
+            swiperTab4.destroy(true, true);
+        }
+
 
         // also remove any swiper classes from DOM
         // removeSwiperFromDom();
@@ -52,10 +62,30 @@ const enableSwiper = function () {
 
     });
 
-    swiperTab1 = new Swiper('#tab1-swiper', {
+    swiperTab1 = new Swiper('#tab1_content', {
         slidesPerView: 'auto',
         spaceBetween: 24,
     });
+
+
+    swiperTab2 = new Swiper('#tab2_content', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+    });
+
+
+    swiperTab3 = new Swiper('#tab3_content', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+    });
+
+
+    swiperTab4 = new Swiper('#tab4_content', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+    });
+
+
 
 
 }

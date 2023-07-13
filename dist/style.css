@@ -1009,8 +1009,8 @@ video {
   height: 11rem;
 }
 
-.h-56 {
-  height: 14rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-8 {
@@ -1152,10 +1152,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-cols-\[1fr_5px_1fr\] {
@@ -1935,10 +1931,6 @@ body {
      object-fit: cover;
 }
 
-.xyz {
-  width: auto;
-}
-
 .hide-overfolw-6 .card:nth-child(n+7) {
   display: none;
 }
@@ -2319,16 +2311,16 @@ ul.li-padding-16 li:not(:last-child){
     flex-wrap: wrap;
   }
 
+  .tablet\:gap-4 {
+    gap: 1rem;
+  }
+
   .tablet\:gap-6 {
     gap: 1.5rem;
   }
 
   .tablet\:gap-8 {
     gap: 2rem;
-  }
-
-  .tablet\:gap-4 {
-    gap: 1rem;
   }
 
   .tablet\:p-6 {

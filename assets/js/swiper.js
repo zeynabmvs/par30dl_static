@@ -8,15 +8,18 @@ const breakpointChecker = function () {
     // if larger viewport and multi-row layout needed
     if (breakpoint.matches === true) {
         // clean up old instances and inline styles when available
-        if (mySwiper !== undefined){
-         mySwiper.destroy(true, true);
+        if (mySwiper !== undefined) {
+            mySwiper.destroy(true, true);
         }
-        
-        if (swiperNews !== undefined){
-         swiperNews.destroy(true, true);
+
+        if (swiperNews !== undefined) {
+            swiperNews.destroy(true, true);
         }
-        if (swiperTabs !== undefined){
-         swiperTabs.destroy(true, true);
+        if (swiperTabs !== undefined) {
+            swiperTabs.destroy(true, true);
+        }
+        if (swiperTab1 !== undefined) {
+            swiperTab1.destroy(true, true);
         }
 
         // also remove any swiper classes from DOM
@@ -47,7 +50,12 @@ const enableSwiper = function () {
         slidesPerView: 'auto',
         spaceBetween: 16,
 
-      });
+    });
+
+    swiperTab1 = new Swiper('#tab1-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+    });
 
 
 }
@@ -55,7 +63,7 @@ const enableSwiper = function () {
 const removeSwiperFromDom = function () {
     const swiperElements = document.querySelectorAll('.swiper, .swiper-wrapper, .swiper-slide');
     swiperElements.forEach(element => {
-      element.classList.remove('swiper', 'swiper-wrapper', 'swiper-slide');
+        element.classList.remove('swiper', 'swiper-wrapper', 'swiper-slide');
     });
 }
 

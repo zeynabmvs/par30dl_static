@@ -336,7 +336,7 @@ ul.li-padding-16 li:not(:last-child){
 
 @media only screen and (min-width: 769px) {
     .posts-wrapper {
-        background-color: transparent;
+        background-color: transparent !important;
     }
 }
 .header-mobile.open .hamburger-btn > span:first-child {

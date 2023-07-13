@@ -1009,10 +1009,6 @@ video {
   height: 11rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -1987,7 +1983,7 @@ ul.li-padding-16 li:not(:last-child){
   }
 
   .posts-wrapper {
-    background-color: transparent;
+    background-color: transparent !important;
   }
 }
 

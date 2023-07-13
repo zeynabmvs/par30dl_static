@@ -106,6 +106,9 @@
     --sticky-header-height: 73px;
 }
 
+img {
+    object-fit: contain;
+}
 body {
     overflow-x: hidden;
 }
@@ -147,7 +150,7 @@ body {
     }
 
     .btn {
-        @apply inline-flex flex-row gap-2 justify-between items-center rounded-base pr-3 pl-2.5 laptop:pr-3.5 laptop:pl-3 h-[34px] text-btn-desktop;
+        @apply inline-flex flex-row gap-2 justify-center items-center rounded-base pr-3 pl-2.5 laptop:pr-3.5 laptop:pl-3 h-[34px] text-btn-desktop;
     }
 
     .btn svg {
@@ -167,6 +170,14 @@ body {
     }
 
     .btn-green svg path {
+        @apply fill-white;
+    }
+
+    .btn-blue {
+        @apply bg-primary-700 text-white;
+    }
+
+    .btn-blue svg path {
         @apply fill-white;
     }
 

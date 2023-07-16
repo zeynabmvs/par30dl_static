@@ -9,6 +9,20 @@ function toggleClass(element, className) {
   }
 }
 
+const toggleElementDisplay = function(hiddenElement, transitionDuration) {
+  if (getComputedStyle(hiddenElement).display === 'none') {
+    hiddenElement.style.display = 'block';
+    setTimeout(() => {
+      hiddenElement.style.opacity = '1';
+    }, 100); // Delay the transition for 100 milliseconds for display change to take effect
+  } else {
+    hiddenElement.style.opacity = '0';
+    setTimeout(() => {
+      hiddenElement.style.display = 'none';
+    }, transitionDuration); // Wait for the transition to complete before changing display back to none
+  }
+};
+
 // Tabs Scripts ************************
 // each tabset has a .tabs-js class, first find all tabsets and then 
 // create tabs for each tabset, each tabset has a .tabs-container class
@@ -190,18 +204,11 @@ window.matchMedia('(prefers-color-scheme: dark)')
 
 // Search form show/hide toggle ************************************
 const searchButton = document.querySelectorAll('.search-form-toggle')[0];
+const searchBox = document.getElementById(searchButton.getAttribute('data-target-box'));
 
 searchButton.addEventListener('click', () => {
-  const searchBox = document.getElementById(searchButton.getAttribute('data-target-box'));
 
-  if (searchBox.classList.contains('hidden')) {
-    searchBox.classList.remove('hidden')
-    searchBox.classList.add('block')
-  } else {
-    searchBox.classList.remove('block')
-    searchBox.classList.add('hidden')
-  }
-
+  toggleElementDisplay(searchBox, 300);
 });
 
 
@@ -211,14 +218,7 @@ const megaButton = document.querySelector('#mega-menu-toggle');
 const megaMenu = document.querySelector('#mega-menu');
 
 megaButton.addEventListener('click', () => {
-  if (megaMenu.classList.contains('hidden')) {
-    megaMenu.classList.remove('hidden')
-    megaMenu.classList.add('block')
-  } else {
-    megaMenu.classList.remove('block')
-    megaMenu.classList.add('hidden')
-  }
-
+  toggleElementDisplay(megaMenu, 300);
 });
 
 // Open modal to play trailer ************************************
@@ -296,4 +296,3 @@ listTitles.forEach(title => {
     }
   });
 });
-

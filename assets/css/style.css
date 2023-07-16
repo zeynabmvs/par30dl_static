@@ -460,3 +460,15 @@ ul.li-padding-16 li:not(:last-child){
 .expandright:focus {
 	padding: 0 16px 0 0 ;
 }
+
+#mega-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#search-box-1 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}

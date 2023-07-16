@@ -1038,6 +1038,10 @@ video {
   height: 8rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-44 {
   height: 11rem;
 }
@@ -1088,10 +1092,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .w-48 {
@@ -1239,6 +1239,14 @@ video {
   justify-content: space-around;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -1275,14 +1283,6 @@ video {
   gap: 5px;
 }
 
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-0\.5 {
-  gap: 0.125rem;
-}
-
 .self-start {
   align-self: flex-start;
 }
@@ -1297,6 +1297,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-\[1px\] {
+  border-radius: 1px;
 }
 
 .rounded-\[5px\] {
@@ -1317,14 +1321,6 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-\[1px\] {
-  border-radius: 1px;
 }
 
 .rounded-b-base {
@@ -1571,6 +1567,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[15px\] {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1579,11 +1580,6 @@ video {
 .py-\[23px\] {
   padding-top: 23px;
   padding-bottom: 23px;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-1 {
@@ -1780,6 +1776,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow-base {
   --tw-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);
   --tw-shadow-colored: 0px 1px 3px 0px var(--tw-shadow-color), 0px 1px 2px -1px var(--tw-shadow-color);
@@ -1792,10 +1792,26 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @font-face {
@@ -2159,6 +2175,18 @@ ul.li-padding-16 li:not(:last-child){
 
 .expandright:focus {
   padding: 0 16px 0 0 ;
+}
+
+#mega-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#search-box-1 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .before\:absolute::before {

@@ -30,6 +30,9 @@ const breakpointChecker = function () {
         if (swiperTab4 !== undefined) {
             swiperTab4.destroy(true, true);
         }
+        if (swiperTutorials !== undefined) {
+            swiperTutorials.destroy(true, true);
+        }
 
 
         // also remove any swiper classes from DOM
@@ -52,6 +55,11 @@ const enableSwiper = function () {
     });
 
     swiperNews = new Swiper('#swiper-news', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+    });
+
+    swiperTutorials = new Swiper('#swiper-tutorials', {
         slidesPerView: 'auto',
         spaceBetween: 24,
     });

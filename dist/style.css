@@ -1307,6 +1307,10 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-b-base {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1559,6 +1563,11 @@ video {
 .py-\[23px\] {
   padding-top: 23px;
   padding-bottom: 23px;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-1 {

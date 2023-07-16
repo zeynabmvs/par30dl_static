@@ -1090,6 +1090,10 @@ video {
   height: 100vh;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -1271,6 +1275,14 @@ video {
   gap: 5px;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -1309,6 +1321,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-\[1px\] {
+  border-radius: 1px;
 }
 
 .rounded-b-base {

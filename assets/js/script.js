@@ -189,23 +189,21 @@ window.matchMedia('(prefers-color-scheme: dark)')
   });
 
 // Search form show/hide toggle ************************************
-const searchButtons = document.querySelectorAll('.search-form-toggle');
+const searchButton = document.querySelectorAll('.search-form-toggle')[0];
 
-searchButtons.forEach(searchButton => {
-  searchButton.addEventListener('click', () => {
-    console.log(searchButton.getAttribute('data-target-box'))
-    const searchBox = document.getElementById(searchButton.getAttribute('data-target-box'));
+searchButton.addEventListener('click', () => {
+  const searchBox = document.getElementById(searchButton.getAttribute('data-target-box'));
 
-    if (searchBox.classList.contains('hidden')) {
-      searchBox.classList.remove('hidden')
-      searchBox.classList.add('block')
-    } else {
-      searchBox.classList.remove('block')
-      searchBox.classList.add('hidden')
-    }
-  
-  });
-})
+  if (searchBox.classList.contains('hidden')) {
+    searchBox.classList.remove('hidden')
+    searchBox.classList.add('block')
+  } else {
+    searchBox.classList.remove('block')
+    searchBox.classList.add('hidden')
+  }
+
+});
+
 
 
 // Mega menu show/hide toggle ************************************

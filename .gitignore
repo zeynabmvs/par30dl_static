@@ -22,5 +22,5 @@ node_modules
 *.sw?
 
 
-svg files/*
+svg files
 notes.md

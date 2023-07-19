@@ -2249,6 +2249,11 @@ ul.li-padding-16 li:not(:last-child){
   border-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:border-slate-700) {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:bg-gray-800) {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -2277,6 +2282,11 @@ ul.li-padding-16 li:not(:last-child){
 :is(.dark .dark\:bg-slate-900) {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-slate-300) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 212 224 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:fill-slate-600) {

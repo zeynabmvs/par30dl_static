@@ -2284,11 +2284,6 @@ ul.li-padding-16 li:not(:last-child){
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-slate-300) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 212 224 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:fill-slate-600) {
   fill: #475569;
 }

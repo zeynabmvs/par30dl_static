@@ -11,11 +11,13 @@ function toggleClass(element, className) {
 
 const toggleElementDisplay = function(hiddenElement, transitionDuration) {
   if (getComputedStyle(hiddenElement).display === 'none') {
+    hiddenElement.classList.add('open');
     hiddenElement.style.display = 'block';
     setTimeout(() => {
       hiddenElement.style.opacity = '1';
     }, 100); // Delay the transition for 100 milliseconds for display change to take effect
   } else {
+    hiddenElement.classList.remove('open');
     hiddenElement.style.opacity = '0';
     setTimeout(() => {
       hiddenElement.style.display = 'none';
@@ -216,6 +218,7 @@ searchButton.addEventListener('click', () => {
 // Mega menu show/hide toggle ************************************
 const megaButton = document.querySelector('#mega-menu-toggle');
 const megaMenu = document.querySelector('#mega-menu');
+const headerMain = document.getElementById('header-main');
 
 megaButton.addEventListener('click', () => {
   toggleElementDisplay(megaMenu, 300);

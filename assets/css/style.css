@@ -287,9 +287,12 @@ body {
     object-fit: cover;
 }
 
-.hide-overfolw-6 .card:nth-child(n+7) {
-    display: none;
+@media only screen and (min-width: 768px) {
+    .hide-overfolw > .card:nth-child(n+7) {
+        display: none;
+    }
 }
+
 
 .post:last-child {
     border: none;
